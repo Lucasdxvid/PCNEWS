@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/icons/icono.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bodyBg">
+
+    <!-- HEADER -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navBg">
+            <div class="container-fluid">
+                <a class="navbar-brand logotipo" href="index.html">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guias.html">Guias</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Otros
+                            </a>
+                            <ul class="dropdown-menu navBg" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 navSearchBg" type="search" placeholder="Busca noticias..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success navBtn" type="submit"><img class="navSearchImg"
+                                src="img/icons/search.svg" alt="Buscar"></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <div class="contactMainDiv">
+        <main class="contactMain fix">
+
+            <section class="noticiasTopSection">
+                <div class="noticiasMainTitleDiv">
+                    <h1 class="noticiasMainTitle">Contacto</h1>
+                </div>
+            </section>
+
+            <section class="contactMidSection">
+                <div class="contactFormContainer">
+                    <form action="#" class="contactFormMain">
+                        <div class="contactFormTitleDiv">
+                            <h3 class="contactFormTitle">¿Te gusta nuestro contenido?</h3>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text spanBg">N/A</span>
+                            <input type="text" class="form-control" placeholder="Pedro">
+                            <input type="text" class="form-control" placeholder="Picapiedra">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text spanBg">Nick</span>
+                            <input type="text" class="form-control" placeholder="Athloner">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text spanBg">Mail</span>
+                            <input type="text" class="form-control" placeholder="generico@ejemplo.com">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text spanBg">Genero</span>
+                            <select class="form-select">
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                                <option>No-Binario</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div>
+                            <label for="comment" class="formText">¿Juegas demasiado?:</label>
+                            <input type="range" class="form-range" min="1" max="10">
+                        </div>
+                        <div>
+                            <label for="comment" class="formText">Cuentanos más sobre ti:</label>
+                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        </div>
+
+                        <div class="mt-1">
+                            <label for="comment" class="formText">Que generos de videojuegos prefieres</label>
+                            <div class="contactGenreDiv">
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check1" name="roguelike"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check1">Rogue-Like</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="terror"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check2">Terror</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check3" name="rpg"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check3">RPG/JRPG</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check4" name="rts"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check4">RTS</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check5" name="shooter"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check5">Shooter</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check6" name="fighting"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check6">Fighting</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check7" name="survival"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check7">Survival</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check8" name="hackslash"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check8">Hack&Slash</label>
+                                </div>
+                                <div class="form-check contactGenre">
+                                    <input type="checkbox" class="form-check-input" id="check9" name="otros"
+                                        value="something">
+                                    <label class="form-check-label formText" for="check9">Otros</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-1">
+
+                        <div class="contactFormButtons">
+                            <button type="reset" class="btn btnContact">REINICIAR</button>
+                            <button type="submit" class="btn btnContact">ENVIAR</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="input-group mb-3"></div>
+            </section>
+
+
+            <aside class="contactAside">
+                <div class="contactAsideTitleDiv">
+                    <h2 class="contactAsideTitle">Tambien podria interesarte...</h2>
+                </div>
+                <section class="contactAsideSection">
+                    <article class="noticiasArtMain">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new3.jpg" alt="GoreMagala" class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Publican nuevo trailer de Monster Hunter Rise con Astalos y
+                                    Gore
+                                    Magala
+                                </h3>
+                                <p class="noticiasArtP">Es momento de que conozcas cómo te harán sufrir estos iconicos
+                                    enemigos de antiguas entregas</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">3 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">15 hrs</p>
+                        </div>
+                    </article>
+                    <article class="noticiasArtMain">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new4.jpg" alt="Warframe" class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Tráiler de The Duviri Paradox, la nueva expansión de Warframe
+                                    que
+                                    nos cita para una retransmisión especial
+                                </h3>
+                                <p class="noticiasArtP">Digital Extremes enseñará múltiples novedades el próximo 16 de
+                                    julio
+                                    durante la TennoCon 2022</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">11 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">16 hrs</p>
+                        </div>
+                    </article>
+                    <article class="noticiasArtMain">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new5.jpg" alt="CupHead" class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Cuphead: hablamos con Studio MDHR sobre el DLC, animación
+                                    y su hipoteca
+                                </h3>
+                                <p class="noticiasArtP">Chad y Jared Moldenhauer dicen que "El resultado final fue casi
+                                    exactamente lo que nos propusimos en
+                                    sueños"</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">5 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">22 hrs</p>
+                        </div>
+                    </article>
+                </section>
+            </aside>
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="footerTop text-center text-white">
+        <div class="container p-4 ">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/daaviid.paaz.58"
+                    target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Lucasdxvid1" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Reddit -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/user/Athloner44"
+                    target="_blank" role="button"><i class="fab fa-reddit"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/lucasdxvid/"
+                    target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/lucasdavidpazberrondo/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Athloner" target="_blank"
+                    role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <div class="mb-4">
+                <p>
+                    Sitio web de videojuegos para estar informado de las últimas novedades, análisis, trucos y guías
+                    de juegos para PC
+                </p>
+            </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 footerBottom">
+            © 2022 Copyright:
+            <a class="text-white" href="index.html">PCNEWS.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+    <!-- Body Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/4ec5a32e2a.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

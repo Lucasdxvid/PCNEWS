@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCNEWS</title>
+    <link rel="shortcut icon" href="img/icons/icono.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bodyBg">
+    <div class="mainContainer">
+
+        <!-- Header -->
+
+        <header class="headerGrid">
+            <nav class="navbar navbar-expand-lg bg-light navBg">
+                <div class="container-fluid">
+                    <a class="navbar-brand logotipo" href="index.html">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reviews.html">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="guias.html">Guias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Otros
+                                </a>
+                                <ul class="dropdown-menu navBg" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 navSearchBg" type="search" placeholder="Busca noticias..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success navBtn" type="submit"><img class="navSearchImg"
+                                    src="img/icons/search.svg" alt="Buscar"></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main -->
+
+        <main class="mainGrid">
+            <section class="SectionTop0">
+                <div class="indexMainTitleDiv">
+                    <H1 class="indexMainTitle">Destacadas</H1>
+                </div>
+            </section>
+            <section class="sectionTop">
+                <article class="boxTop">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/bigNew1.jpg" alt="GuiltyGear" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxLink">Guilty Gear: Strive recibirá el 10 de junio una gran actualización
+                            de equilibrio</h2>
+                    </a>
+                </article>
+                <article class="boxTop">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/bigNew2.jpg" alt="Multiversus" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxLink">Multiversus reveló un nuevo tráiler de gameplay y la fecha para
+                            participar de su Beta Abierta</h2>
+                    </a>
+                </article>
+                <article class="boxTop">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/bigNew3.jpg" alt="HaloInfinite" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxLink">Desarrollo de Halo Infinite ha sufrido por la guerra entre Rusia y
+                            Ucrania</h2>
+                    </a>
+                </article>
+            </section>
+            <section class="sectionTop2">
+                <div class="indexCarrusel">
+                    <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button class="billProgress" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3500">
+                                <img src="img/index/bill1.jpg" class="d-block w-100" alt="Summer Game Fest">
+                                <div class="carousel-caption billText">
+                                    <h3 class="billH3">El Summer Game Fest marcó un nuevo récord de audiencia</h3>
+                                    <p class="billP">Pasó el Summer Game Fest y aunque el evento que se convirtió en el
+                                        foco del mes de la “no E3″ no contó con muchas sorpresas</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3500">
+                                <img src="img/index/bill2.jpg" class="d-block w-100" alt="DNF Duel">
+                                <div class="carousel-caption billText">
+                                    <h3 class="billH3">DNF Duel, análisis. La sorpresa del año en la lucha 2D ¿Vale la
+                                        pena?</h3>
+                                    <p class="billP">Era imposible que un juego como DNF Duel no llamase la atención a
+                                        poco que te gustasen los títulos de lucha</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3500">
+                                <img src="img/index/bill3.jpg" class="d-block w-100" alt="Tiny Tina’s Wonderlands">
+                                <div class="carousel-caption billText">
+                                    <h3 class="billH3">Tiny Tina’s Wonderlands tendrá crossplay completo de lanzamiento
+                                        en todas las plataformas</h3>
+                                    <p class="billP">Desde su primer día a la venta la nueva entrega de la serie
+                                        Borderlands, permitirá poder jugar con amigos de otras plataformas</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3500">
+                                <img src="img/index/bill4.jpg" class="d-block w-100" alt="Assassin's Creed Liberation">
+                                <div class="billTextContainer">
+                                    <div class="carousel-caption billText">
+                                        <h3 class="billH3">Assassin's Creed Liberation dejará de estar disponible en
+                                            Steam incluso si ya lo has comprado</h3>
+                                        <p class="billP">Ubisoft ha solicitado la retirada de Assassin's Creed
+                                            Liberation HD de Steam, provocando que quede completamente inaccesible a
+                                            partir del 1 de septiembre incluso para quienes ya lo hayan comprado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionTop3">
+                <article>
+                    <img src="img/index/add1.jpg" alt="publicidad 1" class="pub">
+                </article>
+            </section>
+            <section class="sectionTop4">
+                <article class="boxTop boxTop2">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/smallBox1.jpg" alt="EldenRing" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxText2 boxLink">Elden Ring podría convertirse en el título más
+                            vendido del 2022</h2>
+                    </a>
+                </article>
+                <article class="boxTop boxTop2">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/smallBox2.jpg" alt="EldenRing" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxText2 boxLink">Skate 4 es free-to-play, no se llama Skate 4 y tendra una
+                            beta</h2>
+                    </a>
+                </article>
+                <article class="boxTop boxTop2">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/smallBox3.jpg" alt="TESO" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxText2 boxLink">The Elder Scrolls Online: High Isle ya está disponible en
+                            español</h2>
+                    </a>
+                </article>
+                <article class="boxTop boxTop2">
+                    <a href="#" class="boxLink">
+                        <img src="img/index/smallBox4.jpg" alt="TESO" class="boxImg">
+                        <p class="boxCat">Noticia</p>
+                        <h2 class="boxText boxText2 boxLink">¡¡No te pierdas esta información sobre el parche 6.2 de
+                            FFXIV!!
+                        </h2>
+                    </a>
+                </article>
+            </section>
+            <section class="sectionTop5">
+                <article>
+                    <img src="img/index/add2.png" alt="publicidad 2" class="pub">
+                </article>
+            </section>
+        </main>
+
+        <div class="nada1"></div>
+        <div class="nada2"></div>
+
+        <!-- Content Section -->
+
+        <section class="contentGrid fix">
+            <div class="titleLefttDiv">
+                <h2 class="titleLeft ">Noticias Recientes</h2>
+            </div>
+            <div class="leftSection">
+
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft1.png" alt="GtaV" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">¡Prohibido divertirse! Take-Two va contra mods VR de GTA y Red Dead
+                                Redemption</h3>
+                        </a>
+                        <p class="leftBoxCat">Noticia</p>
+                        <p class="leftBoxP">Luke Ross asegura que el código de sus mods no tiene relación con el
+                            software original de los juegos</p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft2.jpg" alt="lollipopChainsaw" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Lollipop Chainsaw volverá con un remake que tendrá cambios</h3>
+                        </a>
+                        <p class="leftBoxCat">Noticia</p>
+                        <p class="leftBoxP">La nueva versión del título aprovechará el poder de las consolas modernas
+                        </p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft3.jpg" alt="destroyAllHumans" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Destroy All Humans! 2: Reprobed muestra su modo cooperativo</h3>
+                        </a>
+                        <p class="leftBoxCat">Video</p>
+                        <p class="leftBoxP">El nuevo trailer aumentará tu hype por jugar esta entrega</p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft4.jpg" alt="valkyrieElysium" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Valkyrie Elysium - Tráiler Anuncio Fecha de Lanzamiento</h3>
+                        </a>
+                        <p class="leftBoxCat">Video</p>
+                        <p class="leftBoxP">Oficialmente una nueva entrega de la franquicia Valkyrie está en camino</p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft5.jpg" alt="fortnite" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Fortnite: contenido de Dragon Ball llegaría al Battle Royale, según
+                                nueva pista</h3>
+                        </a>
+                        <p class="leftBoxCat">Noticia</p>
+                        <p class="leftBoxP">Reconocido dataminer elevó el hype de toda la comunidad con una revelación
+                        </p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft6.jpg" alt="stray" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Tu gato no es el de Stray, pero puede vivir aventuras igual de
+                                curiosas con estos accesorios de mochila y arnés</h3>
+                        </a>
+                        <p class="leftBoxCat">Noticia</p>
+                        <p class="leftBoxP">RAnnapurna Interactive ha hecho una colaboración con Travel Cat para que
+                            estos productos sean una realidad
+                        </p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft7.jpg" alt="kimetsunoyaiba" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Demon Slayer: The Hinokami Chronicles - Tráiler de Contenido</h3>
+                        </a>
+                        <p class="leftBoxCat">Video</p>
+                        <p class="leftBoxP">Conoce al nuevo personaje que podrás sumar a este título vía compra
+                        </p>
+                    </div>
+                </article>
+                <article class="mainLeftBox">
+                    <div class="leftBoxImgDiv">
+                        <img src="img/index/NoticiaLeft8.jpg" alt="fortnite" class="leftBoxImg">
+                    </div>
+                    <div class="leftBoxDiv">
+                        <a href="#" class="leftBoxLink">
+                            <h3 class="leftBoxH3">Death by Daylight se prepara para su próxima colaboración con una
+                                escalofriante imagen de Attack on Titan</h3>
+                        </a>
+                        <p class="leftBoxCat">Noticia</p>
+                        <p class="leftBoxP">El crossover apunta a ampliar el número de cosméticos en el juego, aunque
+                            todavía no hay fecha de lanzamiento
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Aside -->
+        <aside class="asideGrid fix">
+            <div class="titleRightDiv">
+                <h2 class="titleRight ">PCNEWS-TV</h2>
+            </div>
+            <section class="asideVideoContainer">
+                <div class="asideVideosSection">
+                    <h4 class="videosAsideTitle">Videos Relevantes</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/jpirU6JNheA"
+                            title="Sonic the Hedgehog - Del Peor al Mejor" allowfullscreen></iframe>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Kq2yJp1PFtE"
+                            title="Análisis LAS TORTUGAS NINJA: SHREDDER'S REVENGE - ¿MERECE la PENA?"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/s-teAxXSdUk"
+                            title="Tunic - ¡Lo Bueno, lo Malo y lo Meh!" allowfullscreen></iframe>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/74DCwiShiHQ"
+                            title="DRAGONFLIGHT - NOVEDADES Y CAMBIOS" allowfullscreen></iframe>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/UWybUWOPrO8"
+                            title="God of War: ¿Qué tal corre en PC?" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Footer -->
+
+        <footer class="footerGrid footerTop text-center text-white">
+            <div class="container p-4 ">
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/daaviid.paaz.58"
+                        target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Lucasdxvid1"
+                        target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Reddit -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/user/Athloner44"
+                        target="_blank" role="button"><i class="fab fa-reddit"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/lucasdxvid/"
+                        target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                        href="https://www.linkedin.com/in/lucasdavidpazberrondo/" target="_blank" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Athloner" target="_blank"
+                        role="button"><i class="fab fa-github"></i></a>
+                </section>
+                <div class="mb-4">
+                    <p>
+                        Sitio web de videojuegos para estar informado de las últimas novedades, análisis, trucos y guías
+                        de juegos para PC
+                    </p>
+                </div>
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3 footerBottom">
+                © 2022 Copyright:
+                <a class="text-white" href="index.html">PCNEWS.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        
+    </div>
+
+    <!-- Body Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/4ec5a32e2a.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

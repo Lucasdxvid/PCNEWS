@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="img/icons/icono.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bodyBg">
+
+    <!-- HEADER -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navBg">
+            <div class="container-fluid">
+                <a class="navbar-brand logotipo" href="index.html">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guias.html">Guias</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Otros
+                            </a>
+                            <ul class="dropdown-menu navBg" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 navSearchBg" type="search" placeholder="Busca noticias..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success navBtn" type="submit"><img class="navSearchImg"
+                                src="img/icons/search.svg" alt="Buscar"></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <div class="noticiasMainDiv">
+        <main class="noticiasMain fix">
+            <section class="noticiasTopSection">
+                <div class="noticiasMainTitleDiv">
+                    <h1 class="noticiasMainTitle">Noticias</h1>
+                </div>
+                <ul class="noticiasCatUl">
+                    <a href="#" class="noticiasCatLink">
+                        <li class="noticiasCatLi">TODO</li>
+                    </a>
+                    <a href="#" class="noticiasCatLink noticiaCenter">
+                        <li class="noticiasCatLi">NOTICIAS</li>
+                    </a>
+                    <a href="#" class="noticiasCatLink">
+                        <li class="noticiasCatLi">ARTICULOS</li>
+                    </a>
+                </ul>
+            </section>
+            <section class="noticiasMidSection">
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new1.jpg" alt="GTX-3090-TI" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Mineros están rematando sus tarjetas gráficas, pero muchas
+                                tienen
+                                chips
+                            </h3>
+                            <p class="noticiasArtP">Usuarios que compraron algunas de estas tarjetas descubrieron que
+                                las tarjetas fueron
+                                modificadas en algún momento</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">2 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">3 hrs</p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new2.jpg" alt="Fall Guys" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Tras el cambio a free-to-play, Fall Guys vive su mejor momento
+                                desde 2020
+                            </h3>
+                            <p class="noticiasArtP">El videojuego gratuito de Mediatonic la rompe en Twitch y Steam a
+                                pesar de desaparecer de la misma</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">7 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">9 hrs</p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new3.jpg" alt="GoreMagala" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Publican nuevo trailer de Monster Hunter Rise con Astalos y Gore
+                                Magala
+                            </h3>
+                            <p class="noticiasArtP">Es momento de que conozcas cómo te harán sufrir estos iconicos
+                                enemigos de antiguas entregas</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">3 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">15 hrs</p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new4.jpg" alt="Warframe" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Tráiler de The Duviri Paradox, la nueva expansión de Warframe que
+                                nos cita para una retransmisión especial
+                            </h3>
+                            <p class="noticiasArtP">Digital Extremes enseñará múltiples novedades el próximo 16 de julio
+                                durante la TennoCon 2022</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">11 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">16 hrs</p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new5.jpg" alt="CupHead" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Artículo</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Cuphead: hablamos con Studio MDHR sobre el DLC, animación
+                                y su hipoteca
+                            </h3>
+                            <p class="noticiasArtP">Chad y Jared Moldenhauer dicen que "El resultado final fue casi exactamente lo que nos propusimos en
+                                sueños"</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">5 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">22 hrs</p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new6.jpg" alt="BaldursGate3" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Baldur’s Gate 3 se actualiza para añadir la raza Gnomo, la clase
+                                Bardo y mejoras en la IA
+                            </h3>
+                            <p class="noticiasArtP">El mundo de Baldur's Gate 3 recibe un masivo parche: bardos, gnomos
+                                y mejoras en la IA</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">10 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">18/Jul/22 </p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new7.jpg" alt="Chivalry2" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Chivalry 2 anuncia el fin de su exclusividad en Epic Games Store y
+                                su llegada a Steam con nuevo DLC
+                            </h3>
+                            <p class="noticiasArtP">La conferencia de PC Games Show del Summer Game Fest 2022 ha dado la
+                                sorpresa con Chivalry 2</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">8 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">18/Jul/22 </p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new8.jpg" alt="GabeNewell" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Artículo</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Gabe Newell: «La mayoría de las personas que hablan sobre el
+                                metaverso no tienen ni idea de lo que están hablando»
+                            </h3>
+                            <p class="noticiasArtP">Gabe Newell piensa que el Metaverso es una mentira, y nosotros, como
+                                él, pensamos lo mismo</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">12 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">17/Jul/22 </p>
+                    </div>
+                </article>
+                <article class="noticiasArtMain">
+                    <a href="#">
+                        <div class="noticiasArtImgDiv">
+                            <img src="img/noticias/new9.jpg" alt="ZZZ" class="noticiasArtImg">
+                            <p class="noticiasArtCat">Noticia</p>
+                        </div>
+                        <div class="noticiasArtDiv">
+                            <h3 class="noticiasArtH3">Zenless Zone Zero muestra el combate y nuevos personajes en este
+                                gameplay
+                            </h3>
+                            <p class="noticiasArtP">Un nuevo tráiler de Zenless Zone Zero, la aventura de acción
+                                anunciada el mes pasado para PC, Android y iPhone</p>
+                        </div>
+                    </a>
+                    <div class="miniArtDiv">
+                        <i class="fa-solid fa-comments"></i>
+                        <p class="noticiasArMiniP">25 comentarios</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="noticiasArMiniP">15/Jul/22 </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footerTop text-center text-white">
+        <div class="container p-4 ">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/daaviid.paaz.58"
+                    target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Lucasdxvid1" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Reddit -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/user/Athloner44"
+                    target="_blank" role="button"><i class="fab fa-reddit"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/lucasdxvid/"
+                    target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/lucasdavidpazberrondo/" target="_blank" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Athloner" target="_blank"
+                    role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <div class="mb-4">
+                <p>
+                    Sitio web de videojuegos para estar informado de las últimas novedades, análisis, trucos y guías
+                    de juegos para PC
+                </p>
+            </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 footerBottom">
+            © 2022 Copyright:
+            <a class="text-white" href="index.html">PCNEWS.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    </div>
+
+    <!-- Body Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/4ec5a32e2a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
