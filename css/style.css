@@ -132,6 +132,7 @@ header {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     animation-name: reload;
     animation-duration: 0.5s;
+    font-style: italic;
 }
 
 .navbar-nav>li {
@@ -148,6 +149,14 @@ header {
 .navBtn:active {
     background-color: rgb(142, 12, 194);
     border: none;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+    background-color: rgba(255, 0, 0, 0);
 }
 
 .navSearchImg {
