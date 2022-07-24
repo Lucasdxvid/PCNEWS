@@ -546,6 +546,14 @@ header {
         margin: 1% 1%;
     }
 
+    .noticiasMainTitleDiv,.reviewMainTitleDiv, .guiaMainTitleDiv, .indexMainTitleDiv {
+        margin: 0.1em 0;
+    }
+
+    .noticiasMainTitle, .reviewMainTitle, .guiaMainTitle, .indexMainTitle {
+        margin: 0;
+    }
+
     .indexMainTitle {
         color: white;
         text-align: center;
@@ -1075,7 +1083,8 @@ header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.185);
         border-radius: 1%;
         font-size: 1.4em;
-        margin: 1% 0 0 1%;
+        margin: 1% 0 1% 0%;
+        text-align: center;
     }
 
     .guiaArtH2Div {
@@ -1633,6 +1642,7 @@ header {
 
 .noticiaCenter {
     margin-left: 9%;
+    margin-right: 1%;
 }
 
 .noticiasCatLink {
@@ -1765,7 +1775,9 @@ header {
 
 /* Media Query Mobile General */
 
-@media only screen and (min-width: 1px) and (max-width: 666px) {
+@media only screen and (min-width: 1px) and (max-width: 660px) {
+    
+
     .noticiasMainTitle {
         font-size: 2em;
         overflow: hidden;
@@ -1783,7 +1795,8 @@ header {
         border-bottom: 1px solid rgba(0, 0, 0, 0.185);
         border-radius: 1%;
         font-size: 1.4em;
-        margin: 1% 0 0 1%;
+        margin: 1% 0 1% 0;
+        text-align: center;
     }
 
     .noticiasArtMain {
@@ -1801,7 +1814,7 @@ header {
     }
 
     .noticiaCenter {
-        margin: 1% 0 0 1%;
+        margin: 0;
     }
 
     .noticiasArtH3 {
