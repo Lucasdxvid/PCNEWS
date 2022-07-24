@@ -241,7 +241,7 @@ header {
 }
 
 .indexCarrusel {
-    width: 95%;
+    width: 100%;
 }
 
 .billH3 {
@@ -440,6 +440,15 @@ header {
     background: linear-gradient(0deg, #94156F 0%, #3B156F 50%);
 }
 
+
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .mainGrid {
+        width: 75vw;
+    }
+}
+
 /* Media Query Laptop - Notebook */
 
 @media only screen and (min-width: 1215px) and (max-width:1515px) {
@@ -510,6 +519,18 @@ header {
 
     .footerGrid {
         grid-area: footer;
+    }
+
+    @keyframes reload {
+        from {
+            opacity: 0;
+            transform: scale(1);
+        }
+    
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 
     .sectionTop0 {
@@ -918,6 +939,14 @@ header {
     color: rgb(106, 0, 255);
     font-weight: 600px;
     border: none;
+}
+
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .guiaMain {
+        width: 75vw;
+    }
 }
 
 /* Media Query Laptop - Notebook */
@@ -1419,6 +1448,14 @@ header {
     text-align: center;
 }
 
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .reviewMain {
+        width: 75vw;
+    }
+}
+
 /* Media Query Laptop - Notebook */
 
 @media only screen and (min-width: 992px) and (max-width:1515px) {
@@ -1679,6 +1716,14 @@ header {
     padding-right: 4%;
 }
 
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .noticiasMain {
+        width: 75vw;
+    }
+}
+
 /* Media Query Laptop - Notebook */
 
 @media only screen and (min-width: 992px) and (max-width:1515px) {
@@ -1931,6 +1976,14 @@ input[type="search"]:focus,
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
+}
+
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .contactMain {
+        width: 75vw;
+    }
 }
 
 /* Media Query Laptop - Notebook */
