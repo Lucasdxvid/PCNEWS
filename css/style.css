@@ -68,8 +68,12 @@ header {
 .navbar a:active {
   color: #ea00ff;
   animation-name: reload;
-  animation-duration: 0.5s;
-  font-style: italic;
+  animation-duration: 0.3s;
+}
+
+.navbar-brand:hover {
+  animation-name: reload;
+  animation-duration: 0.3s;
 }
 
 .navbar-nav > li {
