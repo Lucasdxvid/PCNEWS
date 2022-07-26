@@ -58,16 +58,15 @@ header {
 }
 
 .navbar a {
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 1.3em;
 }
 
 .navbar a:hover,
 .navbar a:focus,
 .navbar a:active {
-  color: rgb(249, 70, 255);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #ea00ff;
   animation-name: reload;
   animation-duration: 0.5s;
   font-style: italic;
@@ -85,7 +84,7 @@ header {
 .navBtn:focus,
 .navBtn:hover,
 .navBtn:active {
-  background-color: rgb(142, 12, 194);
+  background-color: #8e0cc2;
   border: none;
 }
 
@@ -96,7 +95,8 @@ header {
 .dropdown-item:hover,
 .dropdown-item:focus,
 .dropdown-item:active {
-  background-color: rgba(255, 0, 0, 0);
+  background-color: none;
+  background: none;
 }
 
 .navSearchImg {
@@ -104,10 +104,16 @@ header {
 }
 
 .navSearchBg {
-  background-color: rgb(234, 217, 243);
-  border: black 1px solid;
+  background-color: #ead9f3;
+  border: #000000 1px solid;
 }
 
+@media only screen and (min-width: 1px) and (max-width: 366px) {
+  .logotipo {
+    width: 7em;
+    height: 1.2em;
+  }
+}
 .footerTop {
   background: linear-gradient(0deg, #94156F 0%, #3B156F 50%);
 }
@@ -125,8 +131,8 @@ header {
 
 .mainGrid {
   grid-area: main;
-  border: rgba(255, 255, 255, 0.048) solid 1px;
-  background: linear-gradient(30deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  border: rgba(0, 0, 0, 0.048) solid 1px;
+  background: linear-gradient(30deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   animation-name: reload;
   animation-duration: 0.5s;
 }
@@ -143,7 +149,7 @@ header {
   grid-area: contentSection;
   border-right: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   animation-name: reload;
   animation-duration: 0.5s;
 }
@@ -152,7 +158,7 @@ header {
   grid-area: aside;
   border-left: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   animation-name: reload;
   animation-duration: 0.5s;
 }
@@ -174,7 +180,7 @@ header {
 .boxTop {
   width: 40%;
   height: auto;
-  border: solid rgba(0, 0, 0, 0.37) 1px;
+  border: solid rgba(0, 0, 0, 0.368627451) 1px;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -207,14 +213,14 @@ header {
   position: absolute;
   top: 5%;
   margin-left: 3%;
-  color: rgb(236, 231, 231);
+  color: #ffffff;
   border-radius: 6px;
-  background: linear-gradient(352deg, rgb(95, 21, 190) 0%, rgb(169, 29, 197) 100%);
+  background: linear-gradient(352deg, #5f15be 0%, #a91dc5 100%);
   font-weight: 900;
 }
 
 .boxLink {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 .boxLink:hover {
   color: #f68eff;
@@ -242,7 +248,7 @@ header {
 }
 
 .billText {
-  background-color: rgba(89, 0, 255, 0.527);
+  background-color: rgba(89, 0, 255, 0.5254901961);
   height: 40%;
   overflow: hidden;
   display: flex;
@@ -300,10 +306,8 @@ header {
 
 .boxLeftSection {
   text-align: center;
-  background-color: rgb(30, 3, 68);
   width: 16%;
   height: 15%;
-  border: solid black 1px;
   display: inline-block;
   margin-bottom: 1%;
 }
@@ -321,7 +325,7 @@ header {
 .mainLeftBox {
   display: flex;
   width: 80%;
-  border-bottom: 1px rgba(0, 0, 0, 0.048) solid;
+  border-bottom: 1px rgba(0, 0, 0, 0.0470588235) solid;
   border-radius: 8px;
   padding: 1%;
   margin-top: 2%;
@@ -329,12 +333,11 @@ header {
 }
 
 .leftBoxImgDiv {
-  background-color: rgba(0, 0, 0, 0);
   position: relative;
 }
 
 .leftBoxImg {
-  border: rgba(0, 0, 0, 0.26) solid 1px;
+  border: rgba(0, 0, 0, 0.368627451) solid 1px;
   border-radius: 50%;
   width: 8vw;
   height: 8vw;
@@ -356,8 +359,8 @@ header {
   margin-bottom: 0.5rem;
   color: rgb(236, 231, 231);
   border-radius: 6px;
-  border: 1px rgba(0, 0, 0, 0.048) solid;
-  background: linear-gradient(352deg, rgb(95, 21, 190) 0%, rgb(62, 13, 129) 100%);
+  border: 1px rgba(0, 0, 0, 0.0470588235) solid;
+  background: linear-gradient(352deg, #4c0e9c 0%, #6b1dc5 100%);
   font-weight: 900;
 }
 
@@ -372,7 +375,7 @@ header {
   color: black;
 }
 .leftBoxLink:hover {
-  color: rgb(106, 0, 255);
+  color: #6a00ff;
   font-weight: 600px;
 }
 
@@ -401,7 +404,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background: linear-gradient(90deg, #242424 0%, #000000 80%);
   width: 80%;
 }
 
@@ -453,7 +456,7 @@ header {
   }
   .mainGrid {
     grid-area: main;
-    border: rgba(255, 255, 255, 0.048) solid 1px;
+    border: rgba(0, 0, 0, 0.048) solid 1px;
   }
   .contentGrid {
     grid-area: contentSection;
@@ -509,7 +512,7 @@ header {
   }
   .indexMainTitle {
     margin: 0;
-    color: white;
+    color: #ffffff;
     text-align: center;
     line-height: 200%;
     font-size: 4em;
@@ -532,7 +535,6 @@ header {
   }
   .boxTop {
     border: 1px rgba(0, 0, 0, 0.048) solid;
-    background-color: rgba(0, 0, 0, 0.048);
     width: 100%;
   }
   .boxText {
@@ -581,7 +583,7 @@ header {
   .boxText2 {
     font-size: 1.7em;
     top: 60%;
-    background-color: rgba(30, 81, 220, 0.2470588235);
+    background: rgba(89, 0, 255, 0.5254901961);
   }
   .titleLefttDiv {
     padding: 0;
@@ -640,7 +642,7 @@ header {
     margin-bottom: 0.1%;
   }
   .boxText2 {
-    background-color: rgba(255, 255, 255, 0);
+    background: none;
   }
   .boxText {
     font-size: 1.4em;
@@ -676,10 +678,6 @@ header {
   }
 }
 @media only screen and (min-width: 1px) and (max-width: 366px) {
-  .logotipo {
-    width: 7em;
-    height: 1.2em;
-  }
   .boxText {
     font-size: 1.1em;
     top: 60%;
@@ -694,7 +692,7 @@ header {
 }
 
 .guiaMain {
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
   animation-name: reload;
   animation-duration: 0.5s;
@@ -730,7 +728,7 @@ header {
 }
 
 .guiaCatUl {
-  background: linear-gradient(352deg, rgb(95, 21, 190) 20%, rgb(115, 13, 129) 80%);
+  background: linear-gradient(352deg, #5f15be 20%, #730d81 80%);
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -745,10 +743,10 @@ header {
 }
 
 .guiaCatLink {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 .guiaCatLink:hover {
-  color: rgb(234, 0, 255);
+  color: #ea00ff;
   font-weight: 900px;
 }
 
@@ -761,7 +759,6 @@ header {
 .guiaArtH2Div {
   margin-top: 2%;
   margin-bottom: 2%;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.116);
 }
 
 .guiaArtH2 {
@@ -815,10 +812,10 @@ header {
 .guiaArtCat {
   display: inline-block;
   margin-left: 2%;
-  color: rgb(236, 231, 231);
+  color: #ffffff;
   border-radius: 6px;
   border: 1px rgba(0, 0, 0, 0.048) solid;
-  background: linear-gradient(12deg, rgb(95, 21, 190) 50%, rgb(151, 3, 165) 100%);
+  background: linear-gradient(12deg, #5f15be 50%, #9703a5 100%);
   font-weight: 900;
 }
 
@@ -832,10 +829,10 @@ header {
 }
 
 .guiaArtLink {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 .guiaArtLink:hover {
-  color: rgb(106, 0, 255);
+  color: #6a00ff;
   font-weight: 600px;
   border: none;
 }
@@ -859,7 +856,6 @@ header {
   }
   .guiaCatUl {
     text-align: center;
-    flex-direction: row;
     width: 90%;
     margin-bottom: 2%;
     margin-top: 0;
@@ -868,9 +864,6 @@ header {
     font-size: 1.9em;
     margin-left: 1%;
     line-height: 300%;
-  }
-  .guiaArtH2Div {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
   }
   .guiaArtMain {
     flex-direction: column-reverse;
@@ -939,8 +932,7 @@ header {
     flex-direction: column;
     border-radius: 1%;
     width: 100%;
-    background: linear-gradient(180deg, rgb(74, 6, 182) 1%, rgb(66, 11, 98) 80%);
-    background-position: center;
+    background: linear-gradient(180deg, #4a06b6 1%, #420b62 80%);
   }
   .guiaCatLi {
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
@@ -951,7 +943,6 @@ header {
   }
   .guiaArtH2Div {
     margin-bottom: 5%;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
   }
   .guiaArtH2 {
     font-size: 1.7em;
@@ -970,7 +961,7 @@ header {
 }
 
 .reviewMain {
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
   animation-name: reload;
   animation-duration: 0.5s;
@@ -988,7 +979,7 @@ header {
 }
 
 .reviewMainTitle {
-  color: white;
+  color: #ffffff;
   text-align: center;
   line-height: 400%;
   font-size: 4em;
@@ -1008,7 +999,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px rgba(0, 0, 0, 0.164) solid;
+  border: 1px rgba(0, 0, 0, 0.185) solid;
 }
 
 .progress {
@@ -1077,13 +1068,13 @@ header {
   position: absolute;
   font-weight: 1000;
   font-size: 3em;
-  color: white;
+  color: #ffffff;
   text-shadow: -1px 0 rgb(97, 6, 139), 0 1px rgb(185, 7, 171), 1px 0 rgba(0, 0, 0, 0.329), 0 -1px rgb(60, 7, 121);
   z-index: 2;
 }
 
 .progress.barBg .progress-bar {
-  border-color: rgb(95, 21, 190);
+  border-color: #5f15be;
 }
 
 .progress.one .progress-left .progress-bar {
@@ -1240,10 +1231,10 @@ header {
 }
 
 .reviewArtLink {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 .reviewArtLink:hover {
-  color: rgb(106, 0, 255);
+  color: #6a00ff;
   font-weight: 600px;
 }
 
@@ -1303,7 +1294,7 @@ header {
     flex-direction: column;
     align-items: center;
     border: 1px rgba(0, 0, 0, 0.048) solid;
-    background-color: rgba(165, 164, 164, 0.116);
+    background-color: rgba(0, 0, 0, 0.048);
     border-radius: 8px;
   }
   .reviewArtImgMobile {
@@ -1323,8 +1314,8 @@ header {
     position: absolute;
     font-weight: 1000;
     font-size: 5em;
-    color: white;
-    text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(185, 7, 171), 1px 0 rgba(136, 9, 9, 0.699), 0 -1px rgb(60, 7, 121);
+    color: #ffffff;
+    text-shadow: 2px 1px rgba(255, 0, 0, 0.4039215686);
     display: inline;
   }
 }
@@ -1354,8 +1345,6 @@ header {
     position: absolute;
     font-weight: 1000;
     font-size: 5em;
-    color: white;
-    text-shadow: 2px 1px rgba(255, 0, 0, 0.4039215686);
     display: block;
   }
 }
@@ -1370,7 +1359,7 @@ header {
 }
 
 .noticiasMain {
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   animation-name: reload;
   animation-duration: 0.2s;
   width: 60%;
@@ -1389,7 +1378,7 @@ header {
 }
 
 .noticiasMainTitle {
-  color: white;
+  color: #ffffff;
   text-align: center;
   line-height: 400%;
   font-size: 4em;
@@ -1406,7 +1395,7 @@ header {
 }
 
 .noticiasCatUl {
-  background: linear-gradient(352deg, rgb(95, 21, 190) 20%, rgb(115, 13, 129) 80%);
+  background: linear-gradient(352deg, #5f15be 20%, #730d81 80%);
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -1420,16 +1409,11 @@ header {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.noticiaCenter {
-  margin-left: 9%;
-  margin-right: 1%;
-}
-
 .noticiasCatLink {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 .noticiasCatLink:hover {
-  color: rgb(234, 0, 255);
+  color: #ea00ff;
   font-weight: 900px;
 }
 
@@ -1454,8 +1438,8 @@ header {
 
 .noticiasArtCat {
   text-align: center;
-  color: rgb(236, 231, 231);
-  background: linear-gradient(352deg, rgb(95, 21, 190) 0%, rgb(169, 29, 197) 100%);
+  color: #ffffff;
+  background: linear-gradient(352deg, #5f15be 0%, #a91dc5 100%);
   font-weight: 900;
 }
 
@@ -1472,11 +1456,11 @@ header {
   width: 100%;
   height: auto;
   overflow: hidden;
-  color: black;
+  color: #000000;
   height: 9em;
 }
 .noticiasArtDiv:hover {
-  color: rgb(106, 0, 255);
+  color: #6a00ff;
 }
 
 .noticiasArtH3 {
@@ -1496,7 +1480,7 @@ header {
 
 .noticiasArMiniP {
   font-size: 0.9em;
-  color: rgb(56, 56, 56);
+  color: #000000;
   padding-left: 1%;
   padding-right: 4%;
 }
@@ -1543,8 +1527,7 @@ header {
     flex-direction: column;
     border-radius: 1%;
     width: 100%;
-    background: linear-gradient(180deg, rgb(74, 6, 182) 1%, rgb(66, 11, 98) 80%);
-    background-position: center;
+    background: linear-gradient(180deg, #4a06b6 1%, #420b62 80%);
   }
   .noticiasCatLi {
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
@@ -1563,9 +1546,6 @@ header {
   }
   .noticiasArtDiv {
     height: auto;
-  }
-  .noticiaCenter {
-    margin: 0;
   }
   .noticiasArtH3 {
     font-size: 1.5em;
@@ -1598,7 +1578,7 @@ header {
 }
 
 .contactMain {
-  background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(214, 214, 214) 100%);
+  background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
   animation-name: reload;
   animation-duration: 0.5s;
@@ -1618,49 +1598,49 @@ header {
 
 .contactFormContainer {
   padding: 2%;
-  background: linear-gradient(352deg, rgb(95, 21, 190) 20%, rgb(115, 13, 129) 80%);
+  background: linear-gradient(352deg, #5f15be 20%, #730d81 80%);
   border-radius: 1%;
   width: 90%;
 }
 
 textarea:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 input:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 input[type=text]:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 input[type=email]:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 input[type=search]:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 .form-select:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
 
 .form-control:focus {
-  border-color: rgb(194, 6, 184);
+  border-color: rgba(170, 13, 255, 0.2196078431);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
   outline: 0 none;
 }
@@ -1678,8 +1658,8 @@ input[type=search]:focus {
   font-size: 2.5em;
   line-height: 2em;
   font-weight: 700;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
 }
 .contactFormTitle:hover {
   text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
@@ -1697,7 +1677,7 @@ input[type=search]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(234, 217, 243, 0.219);
+  background-color: rgba(170, 13, 255, 0.2196078431);
 }
 
 .contactGenre {
@@ -1705,15 +1685,15 @@ input[type=search]:focus {
 }
 
 .formText {
-  color: white;
+  color: #ffffff;
   text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
 }
 
 .spanBg {
   background: linear-gradient(20deg, rgb(58, 11, 102) 20%, rgb(97, 3, 160) 80%);
   border: black solid 0px;
-  color: white;
-  text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .contactFormButtons {
@@ -1723,16 +1703,16 @@ input[type=search]:focus {
 
 .btnContact {
   width: 25%;
-  background: linear-gradient(352deg, rgb(102, 11, 90) 20%, rgb(115, 13, 129) 80%);
-  border: rgba(0, 0, 0, 0.301) solid 1px;
+  background: linear-gradient(352deg, #660b5a 20%, #730d81 80%);
+  border: rgba(0, 0, 0, 0.185) solid 1px;
   text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
-  color: white;
+  color: #ffffff;
   margin: 1%;
 }
 .btnContact:hover {
-  border-color: rgb(126, 5, 120);
+  border-color: #7e0578;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
-  color: rgb(207, 207, 207);
+  color: #f68eff;
   outline: 0 none;
 }
 

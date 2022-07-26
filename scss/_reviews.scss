@@ -6,17 +6,11 @@
 }
 
 .reviewMain {
-    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    background: map-get($map: $colores, $key: "bg2");
     width: 60%;
     animation-name: reload;
     animation-duration: 0.5s;
 }
-
-$color_1: white;
-$color_2: rgb(0, 0, 0);
-$color_3: rgb(106, 0, 255);
-$border-color_1: rgb(95, 21, 190);
-$background-color_1: rgba(165, 164, 164, 0.116);
 
 // Reviews - TOP SECTION
 
@@ -32,18 +26,18 @@ $background-color_1: rgba(165, 164, 164, 0.116);
 }
 
 .reviewMainTitle {
-    color: $color_1;
+    color: map-get($map: $colores, $key: "text2");
     text-align: center;
     line-height: 400%;
     font-size: 4em;
     font-weight: 1000;
-    text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
+    text-shadow: $titleshadow1;
     background-image: url(../img/bg/bgMain.jpg);
     background-position: 1%;
     transition: 1s;
 
     &:hover {
-        text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
+        text-shadow: $titleshadow2;
         background-position: 20%;
         transition: 1s;
     }
@@ -55,7 +49,7 @@ $background-color_1: rgba(165, 164, 164, 0.116);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px rgba(0, 0, 0, 0.164) solid;
+    border: 1px map-get($map: $colores, $key: "border4") solid;
 }
 
 .progress {
@@ -72,7 +66,7 @@ $background-color_1: rgba(165, 164, 164, 0.116);
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 15px solid #9e9e9e36;
+        border: 15px solid map-get($map: $colores, $key: "progress");
         position: absolute;
         top: 0;
         left: 0;
@@ -131,15 +125,15 @@ $background-color_1: rgba(165, 164, 164, 0.116);
         position: absolute;
         font-weight: 1000;
         font-size: 3em;
-        color: $color_1;
-        text-shadow: -1px 0 rgb(97, 6, 139), 0 1px rgb(185, 7, 171), 1px 0 rgba(0, 0, 0, 0.329), 0 -1px rgb(60, 7, 121);
+        color: map-get($map: $colores, $key: "text2");
+        text-shadow: $textShadow3;
         z-index: 2;
     }
 }
 
 .progress.barBg {
     .progress-bar {
-        border-color: $border-color_1;
+        border-color: map-get($map: $colores, $key: "border5");
     }
 }
 
@@ -349,10 +343,10 @@ $background-color_1: rgba(165, 164, 164, 0.116);
 }
 
 .reviewArtLink {
-    color: $color_2;
+    color: map-get($map: $colores, $key: "text1");
 
     &:hover {
-        color: $color_3;
+        color: map-get($map: $colores, $key: "link2");
         font-weight: 600px;
     }
 }
@@ -427,7 +421,7 @@ $background-color_1: rgba(165, 164, 164, 0.116);
         flex-direction: column;
         align-items: center;
         border: 1px rgba(0, 0, 0, 0.048) solid;
-        background-color: $background-color_1;
+        background-color: map-get($map: $colores, $key: "border3");
         border-radius: 8px;
     }
 
@@ -450,8 +444,8 @@ $background-color_1: rgba(165, 164, 164, 0.116);
         position: absolute;
         font-weight: 1000;
         font-size: 5em;
-        color: $color_1;
-        text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(185, 7, 171), 1px 0 rgba(136, 9, 9, 0.699), 0 -1px rgb(60, 7, 121);
+        color: map-get($map: $colores, $key: "text2");
+        text-shadow: $textShadow4;
         display: inline;
     }
 }
@@ -490,8 +484,6 @@ $background-color_1: rgba(165, 164, 164, 0.116);
         position: absolute;
         font-weight: 1000;
         font-size: 5em;
-        color: $color_1;
-        text-shadow: 2px 1px #ff000067;
         display: block;
     }
 }

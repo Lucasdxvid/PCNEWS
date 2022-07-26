@@ -6,7 +6,7 @@
 }
 
 .guiaMain {
-    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    background: map-get($map: $colores, $key: "bg2");
     width: 60%;
     animation-name: reload;
     animation-duration: 0.5s;
@@ -32,20 +32,20 @@
     line-height: 400%;
     font-size: 4em;
     font-weight: 1000;
-    text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
+    text-shadow: $titleshadow1;
     background-image: url(../img/bg/bgMain.jpg);
     background-position: 1%;
     transition: 1s;
 
     &:hover {
-        text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
+        text-shadow: $titleshadow2;
         background-position: 20%;
         transition: 1s;
     }
 }
 
 .guiaCatUl {
-    background: linear-gradient(352deg, rgb(95, 21, 190) 20%, rgb(115, 13, 129) 80%);
+    background: map-get($map: $colores, $key: "cat3");
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -56,14 +56,14 @@
 .guiaCatLi {
     font-size: 2em;
     font-weight: 800;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: $textShadow1;
 }
 
 .guiaCatLink {
-    color: rgb(255, 255, 255);
+    color: map-get($map: $colores, $key: "text2");
 
     &:hover {
-        color: rgb(234, 0, 255);
+        color: map-get($map: $colores, $key: "link3");
         font-weight: 900px;
     }
 }
@@ -79,7 +79,6 @@
 .guiaArtH2Div {
     margin-top: 2%;
     margin-bottom: 2%;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
 }
 
 .guiaArtH2 {
@@ -91,8 +90,8 @@
     display: flex;
     width: 47em;
     height: auto;
-    border: 1px rgba(0, 0, 0, 0.048) solid;
-    background-color: rgba(0, 0, 0, 0.048);
+    border: 1px map-get($map: $colores, $key: "border3") solid;
+    background-color: map-get($map: $colores, $key: "border3");
     border-radius: 8px;
     align-items: center;
     margin: 1% auto 2% auto;
@@ -134,10 +133,10 @@
 .guiaArtCat {
     display: inline-block;
     margin-left: 2%;
-    color: rgb(236, 231, 231);
+    color: map-get($map: $colores, $key: "text2");
     border-radius: 6px;
-    border: 1px rgba(0, 0, 0, 0.048) solid;
-    background: linear-gradient(12deg, rgb(95, 21, 190) 50%, rgb(151, 3, 165) 100%);
+    border: 1px map-get($map: $colores, $key: "border3") solid;
+    background: map-get($map: $colores, $key: "cat4");
     font-weight: 900;
 }
 
@@ -151,10 +150,10 @@
 }
 
 .guiaArtLink {
-    color: rgb(0, 0, 0);
+    color:  map-get($map: $colores, $key: "text1");
 
     &:hover {
-        color: rgb(106, 0, 255);
+        color: map-get($map: $colores, $key: "link2");
         font-weight: 600px;
         border: none;
     }
@@ -191,7 +190,6 @@
 
     .guiaCatUl {
         text-align: center;
-        flex-direction: row;
         width: 90%;
         margin-bottom: 2%;
         margin-top: 0;
@@ -201,10 +199,6 @@
         font-size: 1.9em;
         margin-left: 1%;
         line-height: 300%;
-    }
-
-    .guiaArtH2Div {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
     }
 
     .guiaArtMain {
@@ -286,12 +280,11 @@
         flex-direction: column;
         border-radius: 1%;
         width: 100%;
-        background: linear-gradient(180deg, rgb(74, 6, 182) 1%, rgb(66, 11, 98) 80%);
-        background-position: center;
+        background: map-get($map: $colores, $key: "cat5");
     }
 
     .guiaCatLi {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+        border-bottom: 1px solid map-get($map: $colores, $key: "border4");
         border-radius: 1%;
         font-size: 1.4em;
         margin: 1% 0 1% 0%;
@@ -300,7 +293,6 @@
 
     .guiaArtH2Div {
         margin-bottom: 5%;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.116);
     }
 
     .guiaArtH2 {

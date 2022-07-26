@@ -16,8 +16,8 @@
 
 .mainGrid {
     grid-area: main;
-    border: rgba(255, 255, 255, 0.048) solid 1px;
-    background: linear-gradient(30deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    border: map-get($map: $colores, $key: "border3") solid 1px;
+    background: map-get($map: $colores, $key: "bg1");
     animation-name: reload;
     animation-duration: 0.5s;
 }
@@ -32,9 +32,9 @@
 
 .contentGrid {
     grid-area: contentSection;
-    border-right: rgba(0, 0, 0, 0.048) solid 0.5px;
-    border-top: rgba(0, 0, 0, 0.048) solid 1px;
-    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    border-right: map-get($map: $colores, $key: "border3") solid 0.5px;
+    border-top: map-get($map: $colores, $key: "border3") solid 1px;
+    background: map-get($map: $colores, $key: "bg2");
     animation-name: reload;
     animation-duration: 0.5s;
 }
@@ -42,8 +42,8 @@
 .asideGrid {
     grid-area: aside;
     border-left: rgba(0, 0, 0, 0.048) solid 0.5px;
-    border-top: rgba(0, 0, 0, 0.048) solid 1px;
-    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    border-top: map-get($map: $colores, $key: "border3") solid 1px;
+    background: map-get($map: $colores, $key: "bg2");
     animation-name: reload;
     animation-duration: 0.5s;
 }
@@ -67,7 +67,7 @@
 .boxTop {
     width: 40%;
     height: auto;
-    border: solid rgba(0, 0, 0, 0.37) 1px;
+    border: solid map-get($map: $colores, $key: "border1") 1px;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -88,7 +88,7 @@
     position: absolute;
     top: 70%;
     font-size: 1em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: $textShadow1;
     transform: scale(1);
     transition: 0.1s;
 
@@ -102,17 +102,17 @@
     position: absolute;
     top: 5%;
     margin-left: 3%;
-    color: rgb(236, 231, 231);
+    color: map-get($map: $colores, $key: "text2");
     border-radius: 6px;
-    background: linear-gradient(352deg, rgb(95, 21, 190) 0%, rgb(169, 29, 197) 100%);
+    background: map-get($map: $colores, $key: "cat1");
     font-weight: 900;
 }
 
 .boxLink {
-    color: rgb(255, 255, 255);
+    color: map-get($map: $colores, $key:"text2");
 
     &:hover {
-        color: #f68eff;
+        color: map-get($map: $colores, $key:"link1");
     }
 }
 
@@ -129,16 +129,16 @@
 
 .billH3 {
     font-size: 2.5em;
-    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+    text-shadow: $textShadow2;
 }
 
 .billP {
     font-size: 1em;
-    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+    text-shadow: $textShadow2;
 }
 
 .billText {
-    background-color: rgba(89, 0, 255, 0.527);
+    background-color: map-get($map: $colores, $key:"bg3");
     height: 40%;
     overflow: hidden;
     display: flex;
@@ -198,10 +198,8 @@
 
 .boxLeftSection {
     text-align: center;
-    background-color: rgb(30, 3, 68);
     width: 16%;
     height: 15%;
-    border: solid black 1px;
     display: inline-block;
     margin-bottom: 1%;
 }
@@ -219,7 +217,7 @@
 .mainLeftBox {
     display: flex;
     width: 80%;
-    border-bottom: 1px rgba(0, 0, 0, 0.048) solid;
+    border-bottom: 1px map-get($map: $colores, $key: "border2") solid;
     border-radius: 8px;
     padding: 1%;
     margin-top: 2%;
@@ -227,12 +225,11 @@
 }
 
 .leftBoxImgDiv {
-    background-color: rgba(0, 0, 0, 0);
     position: relative;
 }
 
 .leftBoxImg {
-    border: rgba(0, 0, 0, 0.26) solid 1px;
+    border: map-get($map: $colores, $key: "border1") solid 1px;
     border-radius: 50%;
     width: 8vw;
     height: 8vw;
@@ -254,8 +251,8 @@
     margin-bottom: 0.5rem;
     color: rgb(236, 231, 231);
     border-radius: 6px;
-    border: 1px rgba(0, 0, 0, 0.048) solid;
-    background: linear-gradient(352deg, rgb(95, 21, 190) 0%, rgba(62, 13, 129, 1) 100%);
+    border: 1px map-get($map: $colores, $key: "border2") solid;
+    background: map-get($map: $colores, $key: "cat2");
     font-weight: 900;
 }
 
@@ -270,7 +267,7 @@
     color: black;
 
     &:hover {
-        color: rgb(106, 0, 255);
+        color: map-get($map: $colores, $key: "link2");
         font-weight: 600px;
     }
 }
@@ -302,7 +299,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background: map-get($map: $colores, $key: "bg4");
     width: 80%;
 }
 
@@ -315,11 +312,6 @@
 }
 
 // Index - MEDIA QUERY 
-
-$color_1: white;
-$background-color_1: rgba(0, 0, 0, 0.048);
-$background-color_2: #1e51dc3f;
-$background-color_3: rgba(255, 255, 255, 0);
 
 // Media Query Laptop - Notebook BIG
 
@@ -376,13 +368,13 @@ $background-color_3: rgba(255, 255, 255, 0);
 
     .mainGrid {
         grid-area: main;
-        border: rgba(255, 255, 255, 0.048) solid 1px;
+        border: map-get($map: $colores, $key: "border3") solid 1px;
     }
 
     .contentGrid {
         grid-area: contentSection;
-        border-right: rgba(0, 0, 0, 0.048) solid 0.5px;
-        border-top: rgba(0, 0, 0, 0.048) solid 1px;
+        border-right: map-get($map: $colores, $key: "border3") solid 0.5px;
+        border-top: map-get($map: $colores, $key: "border3") solid 1px;
         grid-column: 1 /span 3;
     }
 
@@ -446,12 +438,12 @@ $background-color_3: rgba(255, 255, 255, 0);
 
     .indexMainTitle {
         margin: 0;
-        color: $color_1;
+        color: map-get($map: $colores, $key: "text2");
         text-align: center;
         line-height: 200%;
         font-size: 4em;
         font-weight: 1000;
-        text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
+        text-shadow: $titleshadow1;
         font-style: italic;
         max-width: 100%;
         background-image: url(../img/bg/bgMain.jpg);
@@ -459,7 +451,7 @@ $background-color_3: rgba(255, 255, 255, 0);
         transition: 1s;
 
         &:hover {
-            text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
+            text-shadow: $titleshadow2;
             background-position: 20%;
             transition: 1s;
         }
@@ -471,8 +463,7 @@ $background-color_3: rgba(255, 255, 255, 0);
     }
 
     .boxTop {
-        border: 1px rgba(0, 0, 0, 0.048) solid;
-        background-color: $background-color_1;
+        border: 1px map-get($map: $colores, $key: "border3") solid;
         width: 100%;
     }
 
@@ -533,7 +524,7 @@ $background-color_3: rgba(255, 255, 255, 0);
     .boxText2 {
         font-size: 1.7em;
         top: 60%;
-        background-color: $background-color_2;
+        background: map-get($map: $colores, $key: "bg3");
     }
 
     .titleLefttDiv {
@@ -612,7 +603,7 @@ $background-color_3: rgba(255, 255, 255, 0);
     }
 
     .boxText2 {
-        background-color: $background-color_3;
+        background: none;
     }
 
     .boxText {
@@ -662,11 +653,6 @@ $background-color_3: rgba(255, 255, 255, 0);
 // Media Query Mobile Small Size
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
-    .logotipo {
-        width: 7em;
-        height: 1.2em;
-    }
-
     .boxText {
         font-size: 1.1em;
         top: 60%;
