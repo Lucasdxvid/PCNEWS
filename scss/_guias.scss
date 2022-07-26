@@ -8,7 +8,9 @@
 .guiaMain {
     background: map-get($map: $colores, $key: "bg2");
     width: 60%;
+    -webkit-animation-name: reload;
     animation-name: reload;
+    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
@@ -150,7 +152,7 @@
 }
 
 .guiaArtLink {
-    color:  map-get($map: $colores, $key: "text1");
+    color: map-get($map: $colores, $key: "text1");
 
     &:hover {
         color: map-get($map: $colores, $key: "link2");
@@ -223,6 +225,7 @@
         border-top-right-radius: 7px;
         margin: 0;
         padding: 0;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 

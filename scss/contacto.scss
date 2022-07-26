@@ -8,7 +8,9 @@
 .contactMain {
     background: map-get($map: $colores, $key: "bg2");
     width: 60%;
+    -webkit-animation-name: reload;
     animation-name: reload;
+    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
@@ -225,11 +227,11 @@ input[type="search"] {
 /* Media Query Mobile Small Size */
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
-   
+
     .contactFormTitle {
         font-size: 1.7em;
     }
-   
+
     .contactAsideTitle {
         font-size: 1em;
     }

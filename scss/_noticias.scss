@@ -7,7 +7,9 @@
 
 .noticiasMain {
     background: map-get($map: $colores, $key: "bg2");
+    -webkit-animation-name: reload;
     animation-name: reload;
+    -webkit-animation-duration: 0.2s;
     animation-duration: 0.2s;
     width: 60%;
 }
@@ -261,7 +263,6 @@
         height: 15em;
     }
 }
-
 
 // Media Query Mobile Small Size
 

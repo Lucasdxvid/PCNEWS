@@ -27,6 +27,16 @@ ul {
   min-height: 100vh;
 }
 
+@-webkit-keyframes reload {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @keyframes reload {
   from {
     opacity: 0;
@@ -38,6 +48,7 @@ ul {
   }
 }
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -67,12 +78,16 @@ header {
 .navbar a:focus,
 .navbar a:active {
   color: #ea00ff;
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
 
 .navbar-brand:hover {
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
 
@@ -137,7 +152,9 @@ header {
   grid-area: main;
   border: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(30deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -154,7 +171,9 @@ header {
   border-right: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -163,7 +182,9 @@ header {
   border-left: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -345,6 +366,7 @@ header {
   border-radius: 50%;
   width: 8vw;
   height: 8vw;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -474,6 +496,12 @@ header {
   }
   .footerGrid {
     grid-area: footer;
+  }
+  @-webkit-keyframes reload {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
   }
   @keyframes reload {
     from {
@@ -699,7 +727,9 @@ header {
 .guiaMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -890,6 +920,7 @@ header {
     border-top-right-radius: 7px;
     margin: 0;
     padding: 0;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .guiaArtDiv {
@@ -968,7 +999,9 @@ header {
 .reviewMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -1042,7 +1075,6 @@ header {
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   border-left: 0;
-  -webkit-transform-origin: center left;
   transform-origin: center left;
 }
 .progress .progress-bar {
@@ -1062,8 +1094,8 @@ header {
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   border-right: 0;
-  -webkit-transform-origin: center right;
   transform-origin: center right;
+  -webkit-animation: loading-0 1.8s linear forwards;
   animation: loading-0 1.8s linear forwards;
 }
 .progress .progress-value {
@@ -1083,38 +1115,47 @@ header {
 }
 
 .progress.one .progress-left .progress-bar {
+  -webkit-animation: loading-1 1s linear forwards 1.8s;
   animation: loading-1 1s linear forwards 1.8s;
 }
 
 .progress.two .progress-left .progress-bar {
+  -webkit-animation: loading-2 1s linear forwards 1.8s;
   animation: loading-2 1s linear forwards 1.8s;
 }
 
 .progress.three .progress-left .progress-bar {
+  -webkit-animation: loading-3 1s linear forwards 1.8s;
   animation: loading-3 1s linear forwards 1.8s;
 }
 
 .progress.four .progress-left .progress-bar {
+  -webkit-animation: loading-4 1s linear forwards 1.8s;
   animation: loading-4 1s linear forwards 1.8s;
 }
 
 .progress.five .progress-left .progress-bar {
+  -webkit-animation: loading-5 1s linear forwards 1.8s;
   animation: loading-5 1s linear forwards 1.8s;
 }
 
 .progress.six .progress-left .progress-bar {
+  -webkit-animation: loading-6 1s linear forwards 1.8s;
   animation: loading-6 1s linear forwards 1.8s;
 }
 
 .progress.seven .progress-left .progress-bar {
+  -webkit-animation: loading-7 1s linear forwards 1.8s;
   animation: loading-7 1s linear forwards 1.8s;
 }
 
 .progress.eight .progress-left .progress-bar {
+  -webkit-animation: loading-8 1s linear forwards 1.8s;
   animation: loading-8 1s linear forwards 1.8s;
 }
 
 .reviewImg {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 122px;
   height: 122px;
@@ -1125,93 +1166,147 @@ header {
   z-index: 1;
 }
 
-@keyframes loading-0 {
+@-webkit-keyframes loading-0 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+  }
+}
+@keyframes loading-0 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(142deg);
   }
 }
 @keyframes loading-1 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(144deg);
     transform: rotate(142deg);
+  }
+}
+@-webkit-keyframes loading-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(162deg);
   }
 }
 @keyframes loading-2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(162deg);
     transform: rotate(162deg);
+  }
+}
+@-webkit-keyframes loading-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(129.6deg);
   }
 }
 @keyframes loading-3 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(129.6deg);
     transform: rotate(129.6deg);
+  }
+}
+@-webkit-keyframes loading-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(136.8deg);
   }
 }
 @keyframes loading-4 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(136.8deg);
     transform: rotate(136.8deg);
+  }
+}
+@-webkit-keyframes loading-5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(169.2deg);
   }
 }
 @keyframes loading-5 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(169.2deg);
     transform: rotate(169.2deg);
+  }
+}
+@-webkit-keyframes loading-6 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 @keyframes loading-6 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(0);
     transform: rotate(0);
+  }
+}
+@-webkit-keyframes loading-7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(115.2deg);
   }
 }
 @keyframes loading-7 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(115.2deg);
     transform: rotate(115.2deg);
+  }
+}
+@-webkit-keyframes loading-8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(151.2deg);
   }
 }
 @keyframes loading-8 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(151.2deg);
     transform: rotate(151.2deg);
   }
 }
@@ -1249,6 +1344,7 @@ header {
   margin-left: -0.1rem;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -1304,6 +1400,7 @@ header {
   }
   .reviewArtImgMobile {
     display: block;
+    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
     border-top-left-radius: 8px;
@@ -1365,7 +1462,9 @@ header {
 
 .noticiasMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.2s;
   animation-duration: 0.2s;
   width: 60%;
 }
@@ -1603,7 +1702,9 @@ header {
 .contactMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
+  -webkit-animation-name: reload;
   animation-name: reload;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
