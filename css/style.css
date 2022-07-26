@@ -410,6 +410,7 @@ header {
   align-items: center;
   background: linear-gradient(90deg, #242424 0%, #000000 80%);
   width: 80%;
+  padding-bottom: 3%;
 }
 
 .videosAsideTitle {
