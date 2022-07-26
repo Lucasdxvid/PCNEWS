@@ -1,0 +1,24 @@
+{
+  "name": "pcnews",
+  "version": "1.0.0",
+  "description": "El repositorio de primer pagina web donde se veran los cambios a lo largo del tiempo https://athloner.github.io/PCNEWS/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Athloner/PCNEWS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Athloner/PCNEWS/issues"
+  },
+  "homepage": "https://github.com/Athloner/PCNEWS#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

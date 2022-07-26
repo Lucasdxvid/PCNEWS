@@ -1,0 +1,505 @@
+// Reviews - MAIN
+
+.reviewMainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.reviewMain {
+    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    width: 60%;
+    animation-name: reload;
+    animation-duration: 0.5s;
+}
+
+$color_1: white;
+$color_2: rgb(0, 0, 0);
+$color_3: rgb(106, 0, 255);
+$border-color_1: rgb(95, 21, 190);
+$background-color_1: rgba(165, 164, 164, 0.116);
+
+// Reviews - TOP SECTION
+
+.reviewSectionTop {
+    display: flex;
+    justify-content: center;
+}
+
+.reviewMainTitleDiv {
+    width: 99%;
+    border-radius: 10px;
+    margin: 0.4% 0;
+}
+
+.reviewMainTitle {
+    color: $color_1;
+    text-align: center;
+    line-height: 400%;
+    font-size: 4em;
+    font-weight: 1000;
+    text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
+    background-image: url(../img/bg/bgMain.jpg);
+    background-position: 1%;
+    transition: 1s;
+
+    &:hover {
+        text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
+        background-position: 20%;
+        transition: 1s;
+    }
+}
+
+// Review - MID SECTION
+
+.reviewArtSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px rgba(0, 0, 0, 0.164) solid;
+}
+
+.progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 15px solid #9e9e9e36;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    >span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .progress-left {
+        left: 0;
+
+        .progress-bar {
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 15px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+
+    .progress-right {
+        right: 0;
+
+        .progress-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-0 1.8s linear forwards;
+        }
+    }
+
+    .progress-value {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 3em;
+        color: $color_1;
+        text-shadow: -1px 0 rgb(97, 6, 139), 0 1px rgb(185, 7, 171), 1px 0 rgba(0, 0, 0, 0.329), 0 -1px rgb(60, 7, 121);
+        z-index: 2;
+    }
+}
+
+.progress.barBg {
+    .progress-bar {
+        border-color: $border-color_1;
+    }
+}
+
+.progress.one {
+    .progress-left {
+        .progress-bar {
+            animation: loading-1 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.two {
+    .progress-left {
+        .progress-bar {
+            animation: loading-2 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.three {
+    .progress-left {
+        .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.four {
+    .progress-left {
+        .progress-bar {
+            animation: loading-4 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.five {
+    .progress-left {
+        .progress-bar {
+            animation: loading-5 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.six {
+    .progress-left {
+        .progress-bar {
+            animation: loading-6 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.seven {
+    .progress-left {
+        .progress-bar {
+            animation: loading-7 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.progress.eight {
+    .progress-left {
+        .progress-bar {
+            animation: loading-8 1s linear forwards 1.8s;
+        }
+    }
+}
+
+.reviewImg {
+    object-fit: cover;
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes loading-0 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(142deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(162deg);
+        transform: rotate(162deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(129.6deg);
+        transform: rotate(129.6deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(136.8deg);
+        transform: rotate(136.8deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(169.2deg);
+        transform: rotate(169.2deg);
+    }
+}
+
+@keyframes loading-6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes loading-7 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(115.2deg);
+        transform: rotate(115.2deg);
+    }
+}
+
+@keyframes loading-8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(151.2deg);
+        transform: rotate(151.2deg);
+    }
+}
+
+// Review - ART Alternativo
+
+.reviewArtImgMobile {
+    display: none;
+}
+
+.reviewPuntaje {
+    display: none;
+}
+
+.reviewSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewArt {
+    display: flex;
+    width: 40%;
+    margin: 3% 2%;
+    align-items: stretch;
+}
+
+.reviewArtLink {
+    color: $color_2;
+
+    &:hover {
+        color: $color_3;
+        font-weight: 600px;
+    }
+}
+
+.reviewArtImg {
+    width: 20rem;
+    order: 2;
+    margin-left: -0.1rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.reviewArtDiv {
+    order: 1;
+    margin: 1em;
+}
+
+.reviewArtH3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.reviewArtP {
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+// Index - MEDIA QUERY 
+
+// Media Query Laptop - Notebook BIG
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .reviewMain {
+        width: 75vw;
+    }
+}
+
+// Media Query Laptop - Notebook
+
+@media only screen and (min-width: 992px) and (max-width:1515px) {
+    .reviewMain {
+        width: 85vw;
+    }
+}
+
+// Media Query laptop-Tablet-Mobile General
+
+@media only screen and (min-width: 1px) and (max-width:991px) {
+    .reviewMainTitle {
+        line-height: 200%;
+    }
+
+    .reviewMain {
+        width: 100%;
+    }
+
+    .reviewBar {
+        display: none;
+    }
+
+    .reviewArtSection {
+        flex-flow: row wrap;
+        margin-top: 0;
+    }
+
+    .reviewArt {
+        flex-direction: column;
+        align-items: center;
+        border: 1px rgba(0, 0, 0, 0.048) solid;
+        background-color: $background-color_1;
+        border-radius: 8px;
+    }
+
+    .reviewArtImgMobile {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .reviewArtDiv {
+        height: 9em;
+        overflow: hidden;
+    }
+
+    .reviewPuntaje {
+        padding: 10%;
+        z-index: 5;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 5em;
+        color: $color_1;
+        text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(185, 7, 171), 1px 0 rgba(136, 9, 9, 0.699), 0 -1px rgb(60, 7, 121);
+        display: inline;
+    }
+}
+
+// Media Query Mobile General
+
+@media only screen and (min-width: 1px) and (max-width:660px) {
+    .reviewMainTitle {
+        font-size: 2em;
+        overflow: hidden;
+    }
+
+    .reviewSection {
+        flex-direction: column;
+    }
+
+    .reviewArt {
+        width: 80%;
+    }
+
+    .reviewArtDiv {
+        height: 10em;
+    }
+
+    .reviewArtH3 {
+        font-size: 2rem;
+    }
+
+    .reviewArtP {
+        font-size: 1.1em;
+    }
+
+    .reviewPuntaje {
+        padding: 20%;
+        z-index: 5;
+        position: absolute;
+        font-weight: 1000;
+        font-size: 5em;
+        color: $color_1;
+        text-shadow: 2px 1px #ff000067;
+        display: block;
+    }
+}
+
+// Media Queries Mobile S
+
+@media only screen and (min-width: 1px) and (max-width: 348px) {
+    .reviewPuntaje {
+        font-size: 3em;
+    }
+}

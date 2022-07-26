@@ -1,0 +1,77 @@
+// Header-Nav - MAIN
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logotipo {
+    background-image: url(../img/icons/logotipo.svg);
+    width: 10em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: url(../img/icons/logotipoHover.svg);
+    }
+}
+
+.navBg {
+    background: linear-gradient(-40deg, #94156F 0%, rgba(59, 21, 111, 1) 25%);
+}
+
+.navbar {
+    a {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0;
+        font-size: 1.3em;
+    }
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: rgb(249, 70, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation-name: reload;
+    animation-duration: 0.5s;
+    font-style: italic;
+}
+
+.navbar-nav {
+    &>li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.navBtn {
+    border: none;
+}
+
+.navBtn:focus,
+.navBtn:hover,
+.navBtn:active {
+    background-color: rgb(142, 12, 194);
+    border: none;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.navSearchImg {
+    width: 2em;
+}
+
+.navSearchBg {
+    background-color: rgb(234, 217, 243);
+    border: black 1px solid;
+}

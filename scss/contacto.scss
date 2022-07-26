@@ -1,0 +1,228 @@
+// Contacto - MAIN
+
+.contactMainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.contactMain {
+    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(214, 214, 214, 1) 100%);
+    width: 60%;
+    animation-name: reload;
+    animation-duration: 0.5s;
+}
+
+$color_1: white;
+$color_2: rgb(207, 207, 207);
+$background-color_1: rgba(234, 217, 243, 0.219);
+$border-color_1: rgb(194, 6, 184);
+$border-color_2: rgb(126, 5, 120);
+
+// Contacto - TOP SECTION
+
+.contactTopSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Contacto - MID SECTION
+
+.contactMidSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactFormContainer {
+    padding: 2%;
+    background: linear-gradient(352deg, rgb(95, 21, 190) 20%, rgb(115, 13, 129) 80%);
+    border-radius: 1%;
+    width: 90%;
+}
+
+textarea {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+input {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+input[type="text"] {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+input[type="email"] {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+input[type="search"] {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+.form-select {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+.form-control {
+    &:focus {
+        border-color: $border-color_1;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        outline: 0 none;
+    }
+}
+
+.contactFormTitleDiv {
+    margin-bottom: 5%;
+    background-image: url(../img/bg/bgChillBear.jpg);
+    background-position: center;
+    background-position-y: 44%;
+    border-radius: 2em;
+}
+
+.contactFormTitle {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 2em;
+    font-weight: 700;
+    color: $color_1;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    &:hover {
+        text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
+    }
+}
+
+.spanSize {
+    width: 3.7em;
+}
+
+.genIco {
+    width: 2em;
+}
+
+.contactGenreDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $background-color_1;
+}
+
+.contactGenre {
+    margin: 1%;
+}
+
+.formText {
+    color: $color_1;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
+}
+
+.spanBg {
+    background: linear-gradient(20deg, rgb(58, 11, 102) 20%, rgb(97, 3, 160) 80%);
+    border: black solid 0px;
+    color: $color_1;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
+}
+
+.contactFormButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.btnContact {
+    width: 25%;
+    background: linear-gradient(352deg, rgb(102, 11, 90) 20%, rgb(115, 13, 129) 80%);
+    border: rgba(0, 0, 0, 0.301) solid 1px;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
+    color: $color_1;
+    margin: 1%;
+
+    &:hover {
+        border-color: $border-color_2;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 255, 0.6);
+        color: $color_2;
+        outline: 0 none;
+    }
+}
+
+// Contacto - BOTTOM SECTION
+
+.contactAside {
+    margin-top: 2%;
+}
+
+.contactAsideTitle {
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+}
+
+.contactAsideSection {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+// Contacto - MEDIA QUERY 
+
+/* Media Query Laptop - Notebook BIG */
+
+@media only screen and (min-width: 1516px) and (max-width:1702px) {
+    .contactMain {
+        width: 75vw;
+    }
+}
+
+/* Media Query Laptop - Notebook */
+
+@media only screen and (min-width: 992px) and (max-width:1515px) {
+    .contactMain {
+        width: 85vw;
+    }
+}
+
+/* Media Query Mobile Small Size */
+
+@media only screen and (min-width: 1px) and (max-width:991px) {
+    .contactMain {
+        width: 100%;
+    }
+
+    .contactFormContainer {
+        width: 100%;
+    }
+}
+
+/* Media Query Mobile Small Size */
+
+@media only screen and (min-width: 1px) and (max-width:366px) {
+    .contactAsideTitle {
+        font-size: 1em;
+    }
+}
