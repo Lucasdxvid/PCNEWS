@@ -1469,7 +1469,7 @@ header {
 
 .noticiasArtH3 {
   font-size: 1.2em;
-  line-height: 1em;
+  line-height: 1.1em;
 }
 
 .noticiasArtP {
@@ -1522,6 +1522,11 @@ header {
     transform: translatey(0px);
   }
 }
+@media only screen and (min-width: 661px) and (max-width: 666px) {
+  .noticiasArtMain {
+    max-width: 45%;
+  }
+}
 @media only screen and (min-width: 1px) and (max-width: 660px) {
   .noticiasMainTitle {
     font-size: 2em;
@@ -1541,7 +1546,7 @@ header {
     text-align: center;
   }
   .noticiasArtMain {
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 5%;
   }
   .noticiasArtImg {
@@ -1564,7 +1569,20 @@ header {
     margin-top: 2%;
   }
 }
+/* Media Query Mobile Medium */
+@media only screen and (min-width: 367px) and (max-width: 460px) {
+  .noticiasArtMain {
+    max-width: 95%;
+  }
+  .noticiasArtImg {
+    width: 100%;
+    height: 15em;
+  }
+}
 @media only screen and (min-width: 1px) and (max-width: 366px) {
+  .noticiasArtMain {
+    max-width: 100%;
+  }
   .noticiasArtImg {
     width: 100%;
     height: 10em;
@@ -1758,8 +1776,17 @@ input[type=search]:focus {
     width: 100%;
   }
 }
+/* Media Query Mobile Medium */
+@media only screen and (min-width: 367px) and (max-width: 440px) {
+  .contactFormTitle {
+    font-size: 2em;
+  }
+}
 /* Media Query Mobile Small Size */
 @media only screen and (min-width: 1px) and (max-width: 366px) {
+  .contactFormTitle {
+    font-size: 1.7em;
+  }
   .contactAsideTitle {
     font-size: 1em;
   }

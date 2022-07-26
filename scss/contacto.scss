@@ -213,9 +213,23 @@ input[type="search"] {
     }
 }
 
+/* Media Query Mobile Medium */
+
+@media only screen and (min-width: 367px) and (max-width:440px) {
+    .contactFormTitle {
+        font-size: 2em;
+    }
+}
+
+
 /* Media Query Mobile Small Size */
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
+   
+    .contactFormTitle {
+        font-size: 1.7em;
+    }
+   
     .contactAsideTitle {
         font-size: 1em;
     }
