@@ -8,9 +8,7 @@
 .contactMain {
     background: map-get($map: $colores, $key: "bg2");
     width: 60%;
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 

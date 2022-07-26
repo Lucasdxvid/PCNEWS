@@ -27,16 +27,6 @@ ul {
   min-height: 100vh;
 }
 
-@-webkit-keyframes reload {
-  from {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 @keyframes reload {
   from {
     opacity: 0;
@@ -48,7 +38,6 @@ ul {
   }
 }
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -78,16 +67,12 @@ header {
 .navbar a:focus,
 .navbar a:active {
   color: #ea00ff;
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
 
 .navbar-brand:hover {
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
 }
 
@@ -152,9 +137,7 @@ header {
   grid-area: main;
   border: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(30deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -171,9 +154,7 @@ header {
   border-right: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -182,9 +163,7 @@ header {
   border-left: rgba(0, 0, 0, 0.048) solid 0.5px;
   border-top: rgba(0, 0, 0, 0.048) solid 1px;
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -497,12 +476,6 @@ header {
   .footerGrid {
     grid-area: footer;
   }
-  @-webkit-keyframes reload {
-    from {
-      opacity: 0;
-      transform: scale(1);
-    }
-  }
   @keyframes reload {
     from {
       opacity: 0;
@@ -727,9 +700,7 @@ header {
 .guiaMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -999,9 +970,7 @@ header {
 .reviewMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
@@ -1462,9 +1431,7 @@ header {
 
 .noticiasMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.2s;
   animation-duration: 0.2s;
   width: 60%;
 }
@@ -1702,9 +1669,7 @@ header {
 .contactMain {
   background: linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%);
   width: 60%;
-  -webkit-animation-name: reload;
   animation-name: reload;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 

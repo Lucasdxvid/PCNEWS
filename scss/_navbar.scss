@@ -1,7 +1,6 @@
 // Header-NAV - MAIN
 
 header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -34,16 +33,12 @@ header {
 .navbar a:focus,
 .navbar a:active {
     color: map-get($map: $colores, $key: "link3");
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
 }
 
 .navbar-brand:hover {
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
 }
 

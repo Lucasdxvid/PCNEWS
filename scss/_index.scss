@@ -18,9 +18,7 @@
     grid-area: main;
     border: map-get($map: $colores, $key: "border3") solid 1px;
     background: map-get($map: $colores, $key: "bg1");
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
@@ -37,9 +35,7 @@
     border-right: map-get($map: $colores, $key: "border3") solid 0.5px;
     border-top: map-get($map: $colores, $key: "border3") solid 1px;
     background: map-get($map: $colores, $key: "bg2");
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
@@ -48,9 +44,7 @@
     border-left: rgba(0, 0, 0, 0.048) solid 0.5px;
     border-top: map-get($map: $colores, $key: "border3") solid 1px;
     background: map-get($map: $colores, $key: "bg2");
-    -webkit-animation-name: reload;
     animation-name: reload;
-    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
@@ -392,13 +386,6 @@
 
     .footerGrid {
         grid-area: footer;
-    }
-
-    @-webkit-keyframes reload {
-        from {
-            opacity: 0;
-            transform: scale(1);
-        }
     }
 
     @keyframes reload {
