@@ -209,7 +209,6 @@
 }
 
 .reviewImg {
-    -o-object-fit: cover;
     object-fit: cover;
     width: 122px;
     height: 122px;
@@ -437,7 +436,6 @@
     margin-left: -0.1rem;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -508,7 +506,6 @@
 
     .reviewArtImgMobile {
         display: block;
-        -o-object-fit: cover;
         object-fit: cover;
         width: 100%;
         border-top-left-radius: 8px;

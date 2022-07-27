@@ -233,7 +233,6 @@
     border-radius: 50%;
     width: 8vw;
     height: 8vw;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -250,7 +249,7 @@
 .leftBoxCat {
     display: inline-block;
     margin-bottom: 0.5rem;
-    color: rgb(236, 231, 231);
+    color: map-get($map: $colores, $key: "text2");
     border-radius: 6px;
     border: 1px map-get($map: $colores, $key: "border2") solid;
     background: map-get($map: $colores, $key: "cat2");
@@ -262,10 +261,11 @@
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
+    color: map-get($map: $colores, $key: "text1");
 }
 
 .leftBoxLink {
-    color: black;
+    color: map-get($map: $colores, $key: "text1");
 
     &:hover {
         color: map-get($map: $colores, $key: "link2");
@@ -285,32 +285,173 @@
     text-align: right;
 }
 
-.asideVideoContainer {
+.asideReleasesContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ratio {
-    width: 90%;
-    margin: 2% 0;
-}
-
-.asideVideosSection {
+.asideReleasesSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: map-get($map: $colores, $key: "bg4");
-    width: 80%;
+    width: 90%;
     padding-bottom: 3%;
 }
 
-.videosAsideTitle {
-    color: white;
+.asideReleasesTitle {
+    color: map-get($map: $colores, $key: "text2");
     font-weight: 900;
     text-align: center;
     margin: 1% auto 2% auto;
     font-size: 20px;
+    padding-bottom: 2%;
+    border-bottom: map-get($map: $colores, $key: "text2") 1px solid;
+}
+
+.mainRightBox {
+    display: flex;
+    width: 80%;
+    border-bottom: 1px map-get($map: $colores, $key: "border2") solid;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-bottom: 4%;
+    border-bottom: 1px map-get($map: $colores, $key: "text2") solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightBoxImgDiv {
+    position: relative;
+}
+
+.rightBoxImg {
+    border: map-get($map: $colores, $key: "text2") solid 1px;
+    width: 6vw;
+    height: 7vw;
+    object-fit: cover;
+}
+
+.rightBoxDiv {
+    margin: 5% 1% 1% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 38%;
+}
+
+.rightBoxH3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.rightBoxCat {
+    display: inline-block;
+    color: map-get($map: $colores, $key: "text2");
+    border-radius: 6px;
+    border: 1px map-get($map: $colores, $key: "border2") solid;
+    background: map-get($map: $colores, $key: "cat2");
+    font-weight: 900;
+    text-align: center;
+    width: 7em;
+}
+
+.rightCircleBox {
+    border: map-get($map: $colores, $key: "progress") 7px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+}
+
+.rightBoxP1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: map-get($map: $colores, $key: "text2");
+    text-align: center;
+    line-height: 0em;
+    margin-top: 35%;
+}
+
+.rightBoxP2 {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: map-get($map: $colores, $key: "text2");
+    text-align: center;
+}
+
+.rightBoxLink {
+    color: map-get($map: $colores, $key: "text3");
+
+    &:hover {
+        color: map-get($map: $colores, $key: "link2");
+        font-weight: 600px;
+    }
+}
+
+.leftBottomSection {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    border-top: map-get($map: $colores, $key: "border2") 2px solid;
+}
+
+.asideReleasesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: map-get($map: $colores, $key: "bg4");
+    width: 90%;
+    padding-bottom: 3%;
+}
+
+.leftBottomTitle {
+    align-self: flex-end;
+    margin: 0.5em 1em 0.3em 4%;
+}
+
+.articleLeft {
+    width: 80%;
+    border: solid map-get($map: $colores, $key: "progress") 0.2em;
+    border-radius: 0.5em;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+
+.articleLeftImg {
+    width: 100%;
+    height: 15em;
+}
+
+.articleLeftH3 {
+    font-size: 1.1em;
+    text-shadow: $textShadow1;
+}
+
+.articleLeftCat {
+    position: absolute;
+    top: 5%;
+    margin-left: 3%;
+    color: map-get($map: $colores, $key: "text2");
+    border-radius: 5px;
+    background: map-get($map: $colores, $key: "cat2");
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.articleLeftLink {
+    color: map-get($map: $colores, $key:"text2");
+    background: map-get($map: $colores, $key:"cat3");
+    margin: 0;
+
+    &:hover {
+        color: map-get($map: $colores, $key:"link1");
+    }
 }
 
 // Index - MEDIA QUERY 
@@ -324,12 +465,13 @@
 }
 
 @media only screen and (min-width: 1215px) and (max-width:1515px) {
-    .billH3 {
-        font-size: 1.5em;
-    }
 
     .mainGrid {
         width: 85vw;
+    }
+
+    .billH3 {
+        font-size: 1.5em;
     }
 }
 
@@ -352,6 +494,40 @@
         font-size: 0.8em;
         top: 60%;
     }
+
+    .mainRightBox {
+        width: 100%;
+    }
+
+    .rightBoxH3 {
+        font-size: 1em;
+    }
+
+    .rightBoxCat {
+        font-size: 0.8em;
+    }
+
+    .rightCircleBox {
+        width: 65px;
+        height: 65px;
+    }
+
+    .rightBoxP1 {
+        font-size: 1em;
+    }
+
+    .rightBoxP2 {
+        font-size: 0.5em;
+    }
+
+    .articleLeft {
+        width: 80%;
+    }
+    
+    .articleLeftImg {
+        width: 100%;
+        height: 10em;
+    }
 }
 
 // Media Query Tablet-Mobile General
@@ -361,7 +537,12 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
-        grid-template-areas: "header""main""contentSection""aside""footer";
+        grid-template-areas:
+            "header"
+            "main"
+            "contentSection"
+            "aside"
+            "footer";
     }
 
     .headerGrid {

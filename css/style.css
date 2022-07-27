@@ -345,7 +345,6 @@ header {
   border-radius: 50%;
   width: 8vw;
   height: 8vw;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -362,7 +361,7 @@ header {
 .leftBoxCat {
   display: inline-block;
   margin-bottom: 0.5rem;
-  color: rgb(236, 231, 231);
+  color: #ffffff;
   border-radius: 6px;
   border: 1px rgba(0, 0, 0, 0.0470588235) solid;
   background: linear-gradient(352deg, #4c0e9c 0%, #6b1dc5 100%);
@@ -374,10 +373,11 @@ header {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  color: #000000;
 }
 
 .leftBoxLink {
-  color: black;
+  color: #000000;
 }
 .leftBoxLink:hover {
   color: #6a00ff;
@@ -394,32 +394,171 @@ header {
   text-align: right;
 }
 
-.asideVideoContainer {
+.asideReleasesContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.ratio {
-  width: 90%;
-  margin: 2% 0;
-}
-
-.asideVideosSection {
+.asideReleasesSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(90deg, #242424 0%, #000000 80%);
-  width: 80%;
+  width: 90%;
   padding-bottom: 3%;
 }
 
-.videosAsideTitle {
-  color: white;
+.asideReleasesTitle {
+  color: #ffffff;
   font-weight: 900;
   text-align: center;
   margin: 1% auto 2% auto;
   font-size: 20px;
+  padding-bottom: 2%;
+  border-bottom: #ffffff 1px solid;
+}
+
+.mainRightBox {
+  display: flex;
+  width: 80%;
+  border-bottom: 1px rgba(0, 0, 0, 0.0470588235) solid;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding-bottom: 4%;
+  border-bottom: 1px #ffffff solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightBoxImgDiv {
+  position: relative;
+}
+
+.rightBoxImg {
+  border: #ffffff solid 1px;
+  width: 6vw;
+  height: 7vw;
+  object-fit: cover;
+}
+
+.rightBoxDiv {
+  margin: 5% 1% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 38%;
+}
+
+.rightBoxH3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.rightBoxCat {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 6px;
+  border: 1px rgba(0, 0, 0, 0.0470588235) solid;
+  background: linear-gradient(352deg, #4c0e9c 0%, #6b1dc5 100%);
+  font-weight: 900;
+  text-align: center;
+  width: 7em;
+}
+
+.rightCircleBox {
+  border: rgba(158, 158, 158, 0.2117647059) 7px solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 5%;
+}
+
+.rightBoxP1 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 0em;
+  margin-top: 35%;
+}
+
+.rightBoxP2 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.rightBoxLink {
+  color: #e9e9e9;
+}
+.rightBoxLink:hover {
+  color: #6a00ff;
+  font-weight: 600px;
+}
+
+.leftBottomSection {
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  border-top: rgba(0, 0, 0, 0.0470588235) 2px solid;
+}
+
+.asideReleasesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #242424 0%, #000000 80%);
+  width: 90%;
+  padding-bottom: 3%;
+}
+
+.leftBottomTitle {
+  align-self: flex-end;
+  margin: 0.5em 1em 0.3em 4%;
+}
+
+.articleLeft {
+  width: 80%;
+  border: solid rgba(158, 158, 158, 0.2117647059) 0.2em;
+  border-radius: 0.5em;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+
+.articleLeftImg {
+  width: 100%;
+  height: 15em;
+}
+
+.articleLeftH3 {
+  font-size: 1.1em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.articleLeftCat {
+  position: absolute;
+  top: 5%;
+  margin-left: 3%;
+  color: #ffffff;
+  border-radius: 5px;
+  background: linear-gradient(352deg, #4c0e9c 0%, #6b1dc5 100%);
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.articleLeftLink {
+  color: #ffffff;
+  background: linear-gradient(352deg, #5f15be 20%, #730d81 80%);
+  margin: 0;
+}
+.articleLeftLink:hover {
+  color: #f68eff;
 }
 
 @media only screen and (min-width: 1516px) and (max-width: 1702px) {
@@ -428,11 +567,11 @@ header {
   }
 }
 @media only screen and (min-width: 1215px) and (max-width: 1515px) {
-  .billH3 {
-    font-size: 1.5em;
-  }
   .mainGrid {
     width: 85vw;
+  }
+  .billH3 {
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1214px) {
@@ -448,6 +587,32 @@ header {
   .boxText {
     font-size: 0.8em;
     top: 60%;
+  }
+  .mainRightBox {
+    width: 100%;
+  }
+  .rightBoxH3 {
+    font-size: 1em;
+  }
+  .rightBoxCat {
+    font-size: 0.8em;
+  }
+  .rightCircleBox {
+    width: 65px;
+    height: 65px;
+  }
+  .rightBoxP1 {
+    font-size: 1em;
+  }
+  .rightBoxP2 {
+    font-size: 0.5em;
+  }
+  .articleLeft {
+    width: 80%;
+  }
+  .articleLeftImg {
+    width: 100%;
+    height: 10em;
   }
 }
 @media only screen and (min-width: 1px) and (max-width: 991px) {
@@ -891,7 +1056,6 @@ header {
     border-top-right-radius: 7px;
     margin: 0;
     padding: 0;
-    -o-object-fit: cover;
     object-fit: cover;
   }
   .guiaArtDiv {
@@ -1124,7 +1288,6 @@ header {
 }
 
 .reviewImg {
-  -o-object-fit: cover;
   object-fit: cover;
   width: 122px;
   height: 122px;
@@ -1313,7 +1476,6 @@ header {
   margin-left: -0.1rem;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -1369,7 +1531,6 @@ header {
   }
   .reviewArtImgMobile {
     display: block;
-    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
     border-top-left-radius: 8px;
