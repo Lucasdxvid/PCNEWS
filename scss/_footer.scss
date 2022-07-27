@@ -3,3 +3,11 @@
 .footerTop {
     background: map-get($map: $colores, $key: "footer");
 }
+
+.btn,
+.btn-outline-light,
+.btn-floating {
+    &:hover {
+        box-shadow: $boxshadow1;
+    }
+}
