@@ -325,7 +325,7 @@ header {
 
 .titleLefttDiv {
   padding-left: 1%;
-  margin: 1rem;
+  margin: 1em;
 }
 
 .titleLeft {
@@ -362,12 +362,12 @@ header {
 .leftBoxH3 {
   font-size: 1.3em;
   font-weight: 600;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
 }
 
 .leftBoxCat {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
   color: #ffffff;
   border-radius: 6px;
   border: 1px rgba(0, 0, 0, 0.0470588235) solid;
@@ -376,8 +376,8 @@ header {
 }
 
 .leftBoxP {
-  line-height: 1rem;
-  font-size: 1rem;
+  line-height: 1em;
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
   color: #000000;
@@ -393,7 +393,7 @@ header {
 
 .titleRightDiv {
   padding-right: 1%;
-  margin: 1rem;
+  margin: 1em;
 }
 
 .titleRight {
@@ -715,14 +715,14 @@ header {
   }
   .boxTop {
     border: 1px rgba(0, 0, 0, 0.048) solid;
-    width: 100%;
+    width: 33.33%;
   }
   .boxText {
-    top: 80%;
-    font-size: 2em;
+    top: 61%;
+    font-size: 1em;
   }
   .boxCat {
-    font-size: 2em;
+    font-size: 1em;
   }
   .sectionTop2 {
     flex-direction: column;
@@ -782,7 +782,8 @@ header {
     width: 200px;
     height: 200px;
   }
-  .asideArticlesSection, .asideReleasesSection {
+  .asideArticlesSection,
+.asideReleasesSection {
     width: 40em;
   }
   .rightBoxImg {
@@ -852,13 +853,15 @@ header {
     height: 150px;
     border-radius: 40px;
   }
-  .asideArticlesSection, .asideReleasesSection {
+  .asideArticlesSection,
+.asideReleasesSection {
     width: 90vw;
   }
   .mainRightBox {
     margin: 4% 0;
   }
-  .mainRightBox, .rightBoxDiv {
+  .mainRightBox,
+.rightBoxDiv {
     flex-direction: column;
     align-items: center;
   }
@@ -1017,7 +1020,7 @@ header {
 .guiaArtH3 {
   font-size: 1.4em;
   font-weight: 600;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
   text-align: left;
   margin-left: 1%;
 }
@@ -1033,8 +1036,8 @@ header {
 }
 
 .guiaArtP {
-  line-height: 1rem;
-  font-size: 1rem;
+  line-height: 1em;
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
   width: 100%;
@@ -1110,7 +1113,7 @@ header {
     width: 100%;
   }
   .guiaArtH3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 0;
     padding-bottom: 0;
     text-align: center;
@@ -1166,6 +1169,10 @@ header {
   .guiaArtH2 {
     font-size: 1.3em;
     font-weight: 800;
+  }
+  .guiaArtH3 {
+    font-size: 1.1em;
+    padding: 1% 0;
   }
 }
 .reviewMainDiv {
@@ -1513,9 +1520,9 @@ header {
 }
 
 .reviewArtImg {
-  width: 20rem;
+  width: 20em;
   order: 2;
-  margin-left: -0.1rem;
+  margin-left: -0.1em;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   object-fit: cover;
@@ -1527,15 +1534,15 @@ header {
 }
 
 .reviewArtH3 {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: 600;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
   text-align: center;
 }
 
 .reviewArtP {
-  line-height: 1rem;
-  font-size: 1rem;
+  line-height: 1em;
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
 }
@@ -1575,6 +1582,7 @@ header {
     display: block;
     object-fit: cover;
     width: 100%;
+    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
@@ -1608,7 +1616,7 @@ header {
     height: 10em;
   }
   .reviewArtH3 {
-    font-size: 2rem;
+    font-size: 2em;
   }
   .reviewArtP {
     font-size: 1.1em;
@@ -1624,7 +1632,17 @@ header {
 }
 @media only screen and (min-width: 1px) and (max-width: 348px) {
   .reviewPuntaje {
-    font-size: 3em;
+    font-size: 4em;
+    padding: 15%;
+  }
+  .reviewArtDiv {
+    height: 1.3em;
+  }
+  .reviewArtH3 {
+    font-size: 1.1em;
+  }
+  .reviewArtP {
+    display: none;
   }
 }
 .noticiasMainDiv {
@@ -1939,7 +1957,7 @@ input[type=search]:focus {
 
 .contactFormTitleDiv {
   margin-bottom: 5%;
-  background-image: url(../img/bg/bgMain.webp);
+  background-image: url(../img/bg/bgChillBear.webp);
   background-position: center;
   background-position-y: 44%;
   border-radius: 2em;
@@ -1979,6 +1997,10 @@ input[type=search]:focus {
 .formText {
   color: #ffffff;
   text-shadow: -1px 0 rgb(0, 0, 0), 0 2px rgb(3, 0, 3), 1px 0 rgba(0, 0, 0, 0.699), 0 -1px rgb(0, 0, 0);
+}
+
+.favGenre {
+  margin: 1% 0;
 }
 
 .spanBg {

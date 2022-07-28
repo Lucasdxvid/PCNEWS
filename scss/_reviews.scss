@@ -431,9 +431,9 @@
 }
 
 .reviewArtImg {
-    width: 20rem;
+    width: 20em;
     order: 2;
-    margin-left: -0.1rem;
+    margin-left: -0.1em;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     object-fit: cover;
@@ -445,15 +445,15 @@
 }
 
 .reviewArtH3 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-weight: 600;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
     text-align: center;
 }
 
 .reviewArtP {
-    line-height: 1rem;
-    font-size: 1rem;
+    line-height: 1em;
+    font-size: 1em;
     font-weight: 400;
     text-align: center;
 }
@@ -508,6 +508,7 @@
         display: block;
         object-fit: cover;
         width: 100%;
+        height: auto;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
@@ -550,7 +551,7 @@
     }
 
     .reviewArtH3 {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .reviewArtP {
@@ -571,6 +572,19 @@
 
 @media only screen and (min-width: 1px) and (max-width: 348px) {
     .reviewPuntaje {
-        font-size: 3em;
+        font-size: 4em;
+        padding: 15%;
+    }
+
+    .reviewArtDiv {
+        height: 1.3em;
+    }
+
+    .reviewArtH3 {
+        font-size: 1.1em;
+    }
+
+    .reviewArtP {
+        display: none;
     }
 }

@@ -125,7 +125,7 @@
 .guiaArtH3 {
     font-size: 1.4em;
     font-weight: 600;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
     text-align: left;
     margin-left: 1%;
 }
@@ -141,8 +141,8 @@
 }
 
 .guiaArtP {
-    line-height: 1rem;
-    font-size: 1rem;
+    line-height: 1em;
+    font-size: 1em;
     font-weight: 400;
     text-align: center;
     width: 100%;
@@ -237,7 +237,7 @@
     }
 
     .guiaArtH3 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         font-weight: 0;
         padding-bottom: 0;
         text-align: center;
@@ -307,5 +307,10 @@
     .guiaArtH2 {
         font-size: 1.3em;
         font-weight: 800;
+    }
+
+    .guiaArtH3 {
+        font-size: 1.1em;
+        padding: 1% 0;
     }
 }
