@@ -74,7 +74,8 @@
 }
 
 .boxImg {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     transform: scale(1.1);
     transition: 1s;
 
@@ -586,11 +587,11 @@
     .sectionTop0 {
         display: flex;
         justify-content: center;
-        max-width: 100%;
+        width: 100%;
     }
 
     .indexMainTitleDiv {
-        max-width: 100%;
+        width: 100%;
         border-radius: 10px;
         display: block;
         margin: 1% 1%;
@@ -630,7 +631,7 @@
         font-weight: 1000;
         text-shadow: $titleshadow1;
         font-style: italic;
-        max-width: 100%;
+        width: 100%;
         background-image: url(../img/bg/bgMain.jpg);
         background-position: 1%;
         transition: 1s;
