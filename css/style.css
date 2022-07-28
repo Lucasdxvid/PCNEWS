@@ -595,7 +595,6 @@ header {
   }
   .boxText {
     font-size: 0.8em;
-    top: 60%;
   }
   .mainRightBox {
     width: 100%;
@@ -792,11 +791,12 @@ header {
   }
 }
 @media only screen and (min-width: 561px) and (max-width: 834px) {
+  .boxText {
+    font-size: 0.8em;
+  }
   .boxText2 {
     font-size: 1em;
-  }
-  .boxText {
-    top: 70%;
+    top: 77%;
   }
 }
 @media only screen and (min-width: 1px) and (max-width: 660px) {
@@ -868,6 +868,10 @@ header {
   .rightCircleBox {
     margin: 0;
   }
+  .rightBoxImg {
+    width: 22em;
+    height: 14em;
+  }
   .rightBoxDiv {
     margin: 4% 0 0 0;
   }
@@ -885,6 +889,10 @@ header {
   .articleLeft {
     width: 90%;
   }
+  .rightBoxImg {
+    width: 15em;
+    height: 8em;
+  }
 }
 @media only screen and (min-width: 1px) and (max-width: 366px) {
   .boxText {
@@ -895,7 +903,7 @@ header {
     display: none;
   }
   .rightBoxImg {
-    width: 7em;
+    width: 12em;
     height: 7em;
   }
   .asideArticlesSection {

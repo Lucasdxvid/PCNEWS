@@ -495,7 +495,6 @@
 
     .boxText {
         font-size: 0.8em;
-        top: 60%;
     }
 
     .mainRightBox {
@@ -749,13 +748,14 @@
 // Media Query laptop-Tablet
 
 @media only screen and (min-width: 561px) and (max-width:834px) {
+    .boxText {
+        font-size: 0.8em;
+    }
+    
     .boxText2 {
         font-size: 1em;
-    }
-
-    .boxText {
-        top: 70%;
-    }
+        top: 77%;
+    }  
 }
 
 // Media Query Mobile General
@@ -847,11 +847,14 @@
         margin: 0;
     }
 
+    .rightBoxImg {
+        width: 22em;
+        height: 14em;
+    }
+
     .rightBoxDiv {
         margin: 4% 0 0 0;
     }
-
-
 }
 
 // Media Query Mobile Medium
@@ -873,6 +876,10 @@
         width: 90%;
     }
 
+    .rightBoxImg {
+        width: 15em;
+        height: 8em;
+    }
 }
 
 // Media Query Mobile Small Size
@@ -888,7 +895,7 @@
     }
 
     .rightBoxImg {
-        width: 7em;
+        width: 12em;
         height: 7em;
     }
 
