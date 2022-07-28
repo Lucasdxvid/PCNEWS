@@ -93,7 +93,7 @@ input[type="search"] {
 
 .contactFormTitleDiv {
     margin-bottom: 5%;
-    background-image: url(../img/bg/bgChillBear.jpg);
+    background-image: $bgMain;
     background-position: center;
     background-position-y: 44%;
     border-radius: 2em;
@@ -105,10 +105,10 @@ input[type="search"] {
     line-height: 2em;
     font-weight: 700;
     color: map-get($map: $colores, $key: "text2");
-    text-shadow: $titleshadow1;
+    text-shadow: $titleShadow1;
 
     &:hover {
-        text-shadow: $titleshadow2;
+        text-shadow: $titleShadow2;
     }
 }
 

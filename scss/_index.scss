@@ -629,15 +629,15 @@
         line-height: 200%;
         font-size: 4em;
         font-weight: 1000;
-        text-shadow: $titleshadow1;
+        text-shadow: $titleShadow1;
         font-style: italic;
         width: 100%;
-        background-image: url(../img/bg/bgMain.jpg);
+        background-image: url(../img/bg/bgMain.webp);
         background-position: 1%;
         transition: 1s;
 
         &:hover {
-            text-shadow: $titleshadow2;
+            text-shadow: $titleShadow2;
             background-position: 20%;
             transition: 1s;
         }

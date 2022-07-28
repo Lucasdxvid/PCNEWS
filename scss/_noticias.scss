@@ -32,13 +32,13 @@
     line-height: 400%;
     font-size: 4em;
     font-weight: 1000;
-    text-shadow: $titleshadow1;
-    background-image: url(../img/bg/bgMain.jpg);
+    text-shadow: $titleShadow1;
+    background-image: $bgMain;
     background-position: 1%;
     transition: 1s;
 
     &:hover {
-        text-shadow: $titleshadow2;
+        text-shadow: $titleShadow2;
         background-position: 20%;
         transition: 1s;
     }

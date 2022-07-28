@@ -18,7 +18,7 @@ ul {
 }
 
 .bodyBg {
-  background-image: url(../img/bg/bgMain.jpg);
+  background-image: url(../img/bg/bgMain.webp);
   background-position: center;
   background-attachment: fixed;
 }
@@ -700,7 +700,7 @@ header {
     text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
     font-style: italic;
     width: 100%;
-    background-image: url(../img/bg/bgMain.jpg);
+    background-image: url(../img/bg/bgMain.webp);
     background-position: 1%;
     transition: 1s;
   }
@@ -930,7 +930,7 @@ header {
   font-size: 4em;
   font-weight: 1000;
   text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
-  background-image: url(../img/bg/bgMain.jpg);
+  background-image: url(../img/bg/bgMain.webp);
   background-position: 1%;
   transition: 1s;
 }
@@ -1198,7 +1198,7 @@ header {
   font-size: 4em;
   font-weight: 1000;
   text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
-  background-image: url(../img/bg/bgMain.jpg);
+  background-image: url(../img/bg/bgMain.webp);
   background-position: 1%;
   transition: 1s;
 }
@@ -1658,7 +1658,7 @@ header {
   font-size: 4em;
   font-weight: 1000;
   text-shadow: -1px 0 black, 0 5px rgb(46, 4, 100), 1px 0 black, 0 -1px black;
-  background-image: url(../img/bg/bgMain.jpg);
+  background-image: url(../img/bg/bgMain.webp);
   background-position: 1%;
   transition: 1s;
 }
@@ -1939,7 +1939,7 @@ input[type=search]:focus {
 
 .contactFormTitleDiv {
   margin-bottom: 5%;
-  background-image: url(../img/bg/bgChillBear.jpg);
+  background-image: url(../img/bg/bgMain.webp);
   background-position: center;
   background-position-y: 44%;
   border-radius: 2em;

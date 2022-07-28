@@ -20,7 +20,7 @@ ul {
 }
 
 .bodyBg {
-    background-image: url(../img/bg/bgMain.jpg);
+    background-image: $bgMain;
     background-position: center;
     background-attachment: fixed;
 }
