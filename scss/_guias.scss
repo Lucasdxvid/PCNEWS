@@ -138,6 +138,8 @@
     border: 1px map-get($map: $colores, $key: "border3") solid;
     background: map-get($map: $colores, $key: "cat4");
     font-weight: 900;
+    width: 5em;
+    text-align: center;
 }
 
 .guiaArtP {

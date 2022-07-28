@@ -255,6 +255,8 @@
     border: 1px map-get($map: $colores, $key: "border2") solid;
     background: map-get($map: $colores, $key: "cat2");
     font-weight: 900;
+    width: 5em;
+    text-align: center;
 }
 
 .leftBoxP {
@@ -826,6 +828,14 @@
         width: 70vw;
         height: 150px;
         border-radius: 40px;
+    }
+
+    .leftBoxH3 {
+        padding: 0;
+    }
+
+    .leftBoxCat {
+        width: 10em;
     }
 
     .asideArticlesSection,

@@ -373,6 +373,8 @@ header {
   border: 1px rgba(0, 0, 0, 0.0470588235) solid;
   background: linear-gradient(352deg, #4c0e9c 0%, #6b1dc5 100%);
   font-weight: 900;
+  width: 5em;
+  text-align: center;
 }
 
 .leftBoxP {
@@ -853,6 +855,12 @@ header {
     height: 150px;
     border-radius: 40px;
   }
+  .leftBoxH3 {
+    padding: 0;
+  }
+  .leftBoxCat {
+    width: 10em;
+  }
   .asideArticlesSection,
 .asideReleasesSection {
     width: 90vw;
@@ -1041,6 +1049,8 @@ header {
   border: 1px rgba(0, 0, 0, 0.048) solid;
   background: linear-gradient(12deg, #5f15be 50%, #9703a5 100%);
   font-weight: 900;
+  width: 5em;
+  text-align: center;
 }
 
 .guiaArtP {
