@@ -54,18 +54,18 @@
 }
 
 .guiaCatLi {
-    font-size: 2em;
-    font-weight: 800;
-    text-shadow: $textShadow1;
-}
-
-.guiaCatLink {
     color: map-get($map: $colores, $key: "text2");
 
     &:hover {
         color: map-get($map: $colores, $key: "link3");
         font-weight: 900px;
     }
+}
+
+.guiaCatLab {
+    font-size: 2em;
+    font-weight: 800;
+    text-shadow: $textShadow1;
 }
 
 // Guias - MID SECTION 
@@ -86,13 +86,13 @@ input[type="radio"] {
     color: var(--white);
 }
 
-[value="All"]:checked~.posts [data-category] {
+[value="All"]:checked~.guiaPosts [data-category] {
     display: block;
 }
 
-[value="LOGROS"]:checked~.posts .post:not([data-category~="LOGROS"]),
-[value="TRUCOS"]:checked~.posts .post:not([data-category~="TRUCOS"]),
-[value="GUIAS"]:checked~.posts .post:not([data-category~="GUIAS"]) {
+[value="LOGROS"]:checked~.guiaPosts .guiaPost:not([data-category~="LOGROS"]),
+[value="TRUCOS"]:checked~.guiaPosts .guiaPost:not([data-category~="TRUCOS"]),
+[value="GUIAS"]:checked~.guiaPosts .guiaPost:not([data-category~="GUIAS"]) {
     display: none;
 }
 
@@ -100,16 +100,6 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.guiaArtH2Div {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.guiaArtH2 {
-    font-size: 2em;
-    font-weight: 800;
 }
 
 .guiaArtMain {
@@ -223,9 +213,8 @@ input[type="radio"] {
         margin-top: 0;
     }
 
-    .guiaCatLi {
+    .guiaCatLab {
         font-size: 1.9em;
-        margin-left: 1%;
         line-height: 300%;
     }
 
@@ -307,36 +296,25 @@ input[type="radio"] {
     .guiaCatUl {
         flex-direction: column;
         border-radius: 1%;
-        width: 100%;
+        width: 100vw;
         background: map-get($map: $colores, $key: "cat5");
     }
 
     .guiaCatLi {
         border-bottom: 1px solid map-get($map: $colores, $key: "border4");
         border-radius: 1%;
+    }
+
+    .guiaCatLab {
         font-size: 1.4em;
         margin: 1% 0 1% 0%;
         text-align: center;
-    }
-
-    .guiaArtH2Div {
-        margin-bottom: 5%;
-    }
-
-    .guiaArtH2 {
-        font-size: 1.7em;
-        font-weight: 800;
     }
 }
 
 // Media Query Mobile Small Size
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
-    .guiaArtH2 {
-        font-size: 1.3em;
-        font-weight: 800;
-    }
-
     .guiaArtH3 {
         font-size: 1.1em;
         padding: 1% 0;
