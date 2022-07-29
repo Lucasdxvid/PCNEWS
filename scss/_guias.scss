@@ -14,16 +14,15 @@
 
 // Guias - TOP SECTION 
 
-.guiaArtSectionTop {
+.guiaTopSection {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .guiaMainTitleDiv {
-    width: 99%;
     border-radius: 10px;
-    margin: 0.4% 1%;
+    margin: 0.4%;
 }
 
 .guiaMainTitle {
@@ -41,6 +40,27 @@
         text-shadow: $titleShadow2;
         background-position: 20%;
         transition: 1s;
+    }
+}
+
+// Guias - MID SECTION 
+
+.guiaMidSection {
+
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [value="todo"]:checked~.filters [for="todo"],
+    [value="logros"]:checked~.filters [for="logros"],
+    [value="trucos"]:checked~.filters [for="trucos"],
+    [value="guias"]:checked~.filters [for="guias"],
+    [value="All"]:checked~.guiaPosts [data-category],
+    [value="logros"]:checked~.guiaPosts .guiaPost:not([data-category~="logros"]),
+    [value="trucos"]:checked~.guiaPosts .guiaPost:not([data-category~="trucos"]),
+    [value="guias"]:checked~.guiaPosts .guiaPost:not([data-category~="guias"]) {
+        display: none;
     }
 }
 
@@ -68,35 +88,7 @@
     text-shadow: $textShadow1;
 }
 
-// Guias - MID SECTION 
-
-input[type="radio"] {
-    position: absolute;
-    left: -9999px;
-}
-
-[value="TODO"]:checked~.filters [for="TODO"],
-[value="LOGROS"]:checked~.filters [for="LOGROS"],
-[value="TRUCOS"]:checked~.filters [for="TRUCOS"],
-[value="GUIAS"]:checked~.filters [for="GUIAS"],
-[value="WordPress"]:checked~.filters [for="WordPress"],
-[value="Slider"]:checked~.filters [for="Slider"],
-[value="fullPage.js"]:checked~.filters [for="fullPage.js"] {
-    background: var(--green);
-    color: var(--white);
-}
-
-[value="All"]:checked~.guiaPosts [data-category] {
-    display: block;
-}
-
-[value="LOGROS"]:checked~.guiaPosts .guiaPost:not([data-category~="LOGROS"]),
-[value="TRUCOS"]:checked~.guiaPosts .guiaPost:not([data-category~="TRUCOS"]),
-[value="GUIAS"]:checked~.guiaPosts .guiaPost:not([data-category~="GUIAS"]) {
-    display: none;
-}
-
-.guiaArtSection {
+.guiaMidSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +202,6 @@ input[type="radio"] {
         text-align: center;
         width: 90%;
         margin-bottom: 2%;
-        margin-top: 0;
     }
 
     .guiaCatLab {
@@ -284,7 +275,7 @@ input[type="radio"] {
         overflow: hidden;
     }
 
-    .guiaArtSection {
+    .guiaMidSection {
         align-items: center;
     }
 

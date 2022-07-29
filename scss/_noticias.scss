@@ -23,7 +23,7 @@
 .noticiasMainTitleDiv {
     width: 99%;
     border-radius: 10px;
-    margin: 0.4% 0;
+    margin: 0.4%;
 }
 
 .noticiasMainTitle {
@@ -44,6 +44,27 @@
     }
 }
 
+// Noticias - MID SECTION 
+
+.noticiasMidSection {
+
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [value="todo2"]:checked~.filters [for="todo2"],
+    [value="popular"]:checked~.filters [for="popular"],
+    [value="NOTICIAS"]:checked~.filters [for="noticias"],
+    [value="articulos"]:checked~.filters [for="articulos"],
+    [value="All"]:checked~.noticiasPosts [data-category],
+    [value="popular"]:checked~.noticiasPosts .noticiasPost:not([data-category~="popular"]),
+    [value="noticias"]:checked~.noticiasPosts .noticiasPost:not([data-category~="noticias"]),
+    [value="articulos"]:checked~.noticiasPosts .noticiasPost:not([data-category~="articulos"]) {
+        display: none;
+    }
+}
+
 .noticiasCatUl {
     background: map-get($map: $colores, $key: "cat3");
     display: flex;
@@ -53,13 +74,13 @@
     border-radius: 8px;
 }
 
-.noticiasCatLi {
+.noticiasCatLab {
     font-size: 2em;
     font-weight: 800;
     text-shadow: $textShadow1;
 }
 
-.noticiasCatLink {
+.noticiasCatLi {
     color: map-get($map: $colores, $key: "text2");
 
     &:hover {
@@ -67,8 +88,6 @@
         font-weight: 900px;
     }
 }
-
-// Noticias - MID SECTION 
 
 .noticiasMidSection {
     display: flex;
@@ -174,10 +193,9 @@
         flex-direction: row;
         width: 90%;
         margin-bottom: 2%;
-        margin-top: 0;
     }
 
-    .noticiasCatLi {
+    .noticiasCatLab {
         font-size: 1.9em;
         margin-left: 1%;
         line-height: 300%;
@@ -213,6 +231,9 @@
 
     .noticiasCatLi {
         border-bottom: 1px solid map-get($map: $colores, $key: "border4");
+    }
+
+    .noticiasCatLab {
         border-radius: 1%;
         font-size: 1.4em;
         margin: 1% 0 1% 0;

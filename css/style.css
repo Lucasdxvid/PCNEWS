@@ -673,24 +673,6 @@ header {
     margin: 1% 1%;
     margin: 0.1em 0;
   }
-  .noticiasMainTitleDiv {
-    margin: 0.1em 0;
-  }
-  .reviewMainTitleDiv {
-    margin: 0.1em 0;
-  }
-  .guiaMainTitleDiv {
-    margin: 0.1em 0;
-  }
-  .noticiasMainTitle {
-    margin: 0;
-  }
-  .reviewMainTitle {
-    margin: 0;
-  }
-  .guiaMainTitle {
-    margin: 0;
-  }
   .indexMainTitle {
     margin: 0;
     color: #ffffff;
@@ -930,16 +912,15 @@ header {
   animation-duration: 0.5s;
 }
 
-.guiaArtSectionTop {
+.guiaTopSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .guiaMainTitleDiv {
-  width: 99%;
   border-radius: 10px;
-  margin: 0.4% 1%;
+  margin: 0.4%;
 }
 
 .guiaMainTitle {
@@ -957,6 +938,21 @@ header {
   text-shadow: -1px 0 rgb(179, 0, 196), 0 5px rgb(105, 3, 240), 3px 0 rgb(172, 0, 135), 0 -1px black;
   background-position: 20%;
   transition: 1s;
+}
+
+.guiaMidSection input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+.guiaMidSection [value=todo]:checked ~ .filters [for=todo],
+.guiaMidSection [value=logros]:checked ~ .filters [for=logros],
+.guiaMidSection [value=trucos]:checked ~ .filters [for=trucos],
+.guiaMidSection [value=guias]:checked ~ .filters [for=guias],
+.guiaMidSection [value=All]:checked ~ .guiaPosts [data-category],
+.guiaMidSection [value=logros]:checked ~ .guiaPosts .guiaPost:not([data-category~=logros]),
+.guiaMidSection [value=trucos]:checked ~ .guiaPosts .guiaPost:not([data-category~=trucos]),
+.guiaMidSection [value=guias]:checked ~ .guiaPosts .guiaPost:not([data-category~=guias]) {
+  display: none;
 }
 
 .guiaCatUl {
@@ -982,33 +978,7 @@ header {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-input[type=radio] {
-  position: absolute;
-  left: -9999px;
-}
-
-[value=TODO]:checked ~ .filters [for=TODO],
-[value=LOGROS]:checked ~ .filters [for=LOGROS],
-[value=TRUCOS]:checked ~ .filters [for=TRUCOS],
-[value=GUIAS]:checked ~ .filters [for=GUIAS],
-[value=WordPress]:checked ~ .filters [for=WordPress],
-[value=Slider]:checked ~ .filters [for=Slider],
-[value="fullPage.js"]:checked ~ .filters [for="fullPage.js"] {
-  background: var(--green);
-  color: var(--white);
-}
-
-[value=All]:checked ~ .guiaPosts [data-category] {
-  display: block;
-}
-
-[value=LOGROS]:checked ~ .guiaPosts .guiaPost:not([data-category~=LOGROS]),
-[value=TRUCOS]:checked ~ .guiaPosts .guiaPost:not([data-category~=TRUCOS]),
-[value=GUIAS]:checked ~ .guiaPosts .guiaPost:not([data-category~=GUIAS]) {
-  display: none;
-}
-
-.guiaArtSection {
+.guiaMidSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1108,7 +1078,6 @@ input[type=radio] {
     text-align: center;
     width: 90%;
     margin-bottom: 2%;
-    margin-top: 0;
   }
   .guiaCatLab {
     font-size: 1.9em;
@@ -1170,7 +1139,7 @@ input[type=radio] {
   .guiaMain {
     overflow: hidden;
   }
-  .guiaArtSection {
+  .guiaMidSection {
     align-items: center;
   }
   .guiaMainTitle {
@@ -1593,7 +1562,6 @@ input[type=radio] {
   }
   .reviewArtSection {
     flex-flow: row wrap;
-    margin-top: 0;
   }
   .reviewArt {
     flex-direction: column;
@@ -1690,7 +1658,7 @@ input[type=radio] {
 .noticiasMainTitleDiv {
   width: 99%;
   border-radius: 10px;
-  margin: 0.4% 0;
+  margin: 0.4%;
 }
 
 .noticiasMainTitle {
@@ -1710,6 +1678,21 @@ input[type=radio] {
   transition: 1s;
 }
 
+.noticiasMidSection input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+.noticiasMidSection [value=todo2]:checked ~ .filters [for=todo2],
+.noticiasMidSection [value=popular]:checked ~ .filters [for=popular],
+.noticiasMidSection [value=NOTICIAS]:checked ~ .filters [for=noticias],
+.noticiasMidSection [value=articulos]:checked ~ .filters [for=articulos],
+.noticiasMidSection [value=All]:checked ~ .noticiasPosts [data-category],
+.noticiasMidSection [value=popular]:checked ~ .noticiasPosts .noticiasPost:not([data-category~=popular]),
+.noticiasMidSection [value=noticias]:checked ~ .noticiasPosts .noticiasPost:not([data-category~=noticias]),
+.noticiasMidSection [value=articulos]:checked ~ .noticiasPosts .noticiasPost:not([data-category~=articulos]) {
+  display: none;
+}
+
 .noticiasCatUl {
   background: linear-gradient(352deg, #5f15be 20%, #730d81 80%);
   display: flex;
@@ -1719,16 +1702,16 @@ input[type=radio] {
   border-radius: 8px;
 }
 
-.noticiasCatLi {
+.noticiasCatLab {
   font-size: 2em;
   font-weight: 800;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.noticiasCatLink {
+.noticiasCatLi {
   color: #ffffff;
 }
-.noticiasCatLink:hover {
+.noticiasCatLi:hover {
   color: #ea00ff;
   font-weight: 900px;
 }
@@ -1823,9 +1806,8 @@ input[type=radio] {
     flex-direction: row;
     width: 90%;
     margin-bottom: 2%;
-    margin-top: 0;
   }
-  .noticiasCatLi {
+  .noticiasCatLab {
     font-size: 1.9em;
     margin-left: 1%;
     line-height: 300%;
@@ -1852,6 +1834,8 @@ input[type=radio] {
   }
   .noticiasCatLi {
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  }
+  .noticiasCatLab {
     border-radius: 1%;
     font-size: 1.4em;
     margin: 1% 0 1% 0;

@@ -70,219 +70,310 @@
                 <div class="noticiasMainTitleDiv">
                     <h1 class="noticiasMainTitle">Noticias</h1>
                 </div>
-                <ul class="noticiasCatUl">
-                    <a href="#" class="noticiasCatLink">
-                        <li class="noticiasCatLi">TODO</li>
-                    </a>
-                    <a href="#" class="noticiasCatLink">
-                        <li class="noticiasCatLi">POPULAR</li>
-                    </a>
-                    <a href="#" class="noticiasCatLink">
-                        <li class="noticiasCatLi">NOTICIAS</li>
-                    </a>
-                    <a href="#" class="noticiasCatLink">
-                        <li class="noticiasCatLi">ARTICULOS</li>
-                    </a>
-                </ul>
             </section>
             <section class="noticiasMidSection">
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new1.webp" alt="La RTX-3090-TI con una cripto simbolica"
-                                class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
+
+                <!-- FILTER-->
+
+                <input type="radio" id="todo2" name="categories" value="todo2" checked>
+                <input type="radio" id="popular" name="categories" value="popular">
+                <input type="radio" id="noticias" name="categories" value="noticias">
+                <input type="radio" id="articulos" name="categories" value="articulos">
+
+                <ul class="noticiasCatUl">
+                    <li class="noticiasCatLi">
+                        <label for="todo2" class="noticiasCatLab">TODO</label>
+                    </li>
+                    <li class="noticiasCatLi">
+                        <label for="popular" class="noticiasCatLab">POPULAR</label>
+                    </li>
+                    <li class="noticiasCatLi">
+                        <label for="noticias" class="noticiasCatLab">NOTICIAS</label>
+                    </li>
+                    <li class="noticiasCatLi">
+                        <label for="articulos" class="noticiasCatLab">ARTICULOS</label>
+                    </li>
+                </ul>
+
+                <!-- FILTER CONTENT-->
+
+                <section class="noticiasMidSection noticiasPosts">
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new1.webp" alt="La RTX-3090-TI con una cripto simbolica"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Mineros están rematando sus tarjetas gráficas, pero muchas
+                                    tienen
+                                    chips
+                                </h3>
+                                <p class="noticiasArtP">Usuarios que compraron algunas de estas tarjetas descubrieron
+                                    que
+                                    las tarjetas fueron
+                                    modificadas en algún momento</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">2 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">3 hrs</p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Mineros están rematando sus tarjetas gráficas, pero muchas
-                                tienen
-                                chips
-                            </h3>
-                            <p class="noticiasArtP">Usuarios que compraron algunas de estas tarjetas descubrieron que
-                                las tarjetas fueron
-                                modificadas en algún momento</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new2.webp" alt="Fall Guys con una corona en su cabeza"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Tras el cambio a free-to-play, Fall Guys vive su mejor momento
+                                    desde 2020
+                                </h3>
+                                <p class="noticiasArtP">El videojuego gratuito de Mediatonic la rompe en Twitch y Steam
+                                    a
+                                    pesar de desaparecer de la misma</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">7 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">9 hrs</p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">2 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">3 hrs</p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new2.webp" alt="Fall Guys con una corona en su cabeza"
-                                class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new3.webp" alt="Gore Magala en frenesí" class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Publican nuevo trailer de Monster Hunter Rise con Astalos y
+                                    Gore
+                                    Magala
+                                </h3>
+                                <p class="noticiasArtP">Es momento de que conozcas cómo te harán sufrir estos iconicos
+                                    enemigos de antiguas entregas</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">3 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">15 hrs</p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Tras el cambio a free-to-play, Fall Guys vive su mejor momento
-                                desde 2020
-                            </h3>
-                            <p class="noticiasArtP">El videojuego gratuito de Mediatonic la rompe en Twitch y Steam a
-                                pesar de desaparecer de la misma</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new4.webp" alt="Antagonista de Duviri Paradox"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">La nueva expansión de Warframe que
+                                    nos cita para una retransmisión especial
+                                </h3>
+                                <p class="noticiasArtP">Digital Extremes enseñará múltiples novedades el próximo 16 de
+                                    julio
+                                    durante la TennoCon 2022</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">29 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">16 hrs</p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">7 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">9 hrs</p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new3.webp" alt="Gore Magala en frenesí" class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new5.webp"
+                                    alt="Ms. Chalice la nueva protagonista con felicidad en su cara"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Cuphead: hablamos con Studio MDHR sobre el DLC, animación
+                                    y su hipoteca
+                                </h3>
+                                <p class="noticiasArtP">Chad y Jared Moldenhauer dicen que "El resultado final fue casi
+                                    exactamente lo que nos propusimos en
+                                    sueños"</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">5 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">22 hrs</p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Publican nuevo trailer de Monster Hunter Rise con Astalos y Gore
-                                Magala
-                            </h3>
-                            <p class="noticiasArtP">Es momento de que conozcas cómo te harán sufrir estos iconicos
-                                enemigos de antiguas entregas</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new6.webp" alt="Astarion enfrentandose a un grupo de goblins"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Baldur’s Gate 3 se actualiza para añadir la raza Gnomo, la
+                                    clase
+                                    Bardo y mejoras en la IA
+                                </h3>
+                                <p class="noticiasArtP">El mundo de Baldur's Gate 3 recibe un masivo parche: bardos,
+                                    gnomos
+                                    y mejoras en la IA</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">10 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">18/Jul/22 </p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">3 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">15 hrs</p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new4.webp" alt="Antagonista de Duviri Paradox" class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new7.webp" alt="Guerreros luchando por la victoria"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Chivalry 2 anuncia el fin de su exclusividad en Epic Games
+                                    Store y
+                                    su llegada a Steam con nuevo DLC
+                                </h3>
+                                <p class="noticiasArtP">La conferencia de PC Games Show del Summer Game Fest 2022 ha
+                                    dado la
+                                    sorpresa con Chivalry 2</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">15 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">18/Jul/22 </p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">La nueva expansión de Warframe que
-                                nos cita para una retransmisión especial
-                            </h3>
-                            <p class="noticiasArtP">Digital Extremes enseñará múltiples novedades el próximo 16 de julio
-                                durante la TennoCon 2022</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new8.webp" alt="Gabe Newell respondiendo preguntas"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Gabe Newell cree que el Metaverso no aporta nada nuevo «Es
+                                    absurdo» </h3>
+                                <p class="noticiasArtP">Gabe Newell piensa que el Metaverso es una mentira, y nosotros,
+                                    como
+                                    él, pensamos lo mismo</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">19 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">17/Jul/22 </p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">11 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">16 hrs</p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new5.webp"
-                                alt="Ms. Chalice la nueva protagonista con felicidad en su cara" class="noticiasArtImg">
-                            <p class="noticiasArtCat">Artículo</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="noticias popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new9.webp" alt="Un nuevo personaje misterioso"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Noticia</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">Zenless Zone Zero muestra el combate y nuevos personajes en
+                                    este
+                                    gameplay divertido
+                                </h3>
+                                <p class="noticiasArtP">Un nuevo tráiler de Zenless Zone Zero, la aventura de acción
+                                    anunciada el mes pasado para PC, Android y iPhone</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">25 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">15/Jul/22 </p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Cuphead: hablamos con Studio MDHR sobre el DLC, animación
-                                y su hipoteca
-                            </h3>
-                            <p class="noticiasArtP">Chad y Jared Moldenhauer dicen que "El resultado final fue casi
-                                exactamente lo que nos propusimos en
-                                sueños"</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new10.webp" alt="Gollum sorprendido"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">The Lord of The Rings: Gollum busca complacer a los fans de J.
+                                    R. R.
+                                </h3>
+                                <p class="noticiasArtP">Ya vimos el juego en acción y te compartimos nuestras
+                                    impresiones</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">21 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">8/Jul/22 </p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">5 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">22 hrs</p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new6.webp" alt="Astarion enfrentandose a un grupo de goblins"
-                                class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos popular">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new11.webp" alt="Guerrero con su mascara metalica de frente"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">New World: creando el mundo del primer gran éxito de Amazon
+                                    Games
+                                </h3>
+                                <p class="noticiasArtP">Hablamos con el equipo de arte sobre la creación de Aeternum y
+                                    sus habitantes</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">19 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">3/Jul/22 </p>
                         </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Baldur’s Gate 3 se actualiza para añadir la raza Gnomo, la clase
-                                Bardo y mejoras en la IA
-                            </h3>
-                            <p class="noticiasArtP">El mundo de Baldur's Gate 3 recibe un masivo parche: bardos, gnomos
-                                y mejoras en la IA</p>
+                    </article>
+                    <article class="noticiasArtMain noticiasPost" data-category="articulos">
+                        <a href="#">
+                            <div class="noticiasArtImgDiv">
+                                <img src="img/noticias/new12.webp" alt="Niña y un mounstro posando"
+                                    class="noticiasArtImg">
+                                <p class="noticiasArtCat">Artículo</p>
+                            </div>
+                            <div class="noticiasArtDiv">
+                                <h3 class="noticiasArtH3">DokeV quiere que recuperes la chispa de divertirte como niño
+                                </h3>
+                                <p class="noticiasArtP">Platicamos con Pearl Abyss sobre el juego que se robó el show en
+                                    Opening Night Live 2021</p>
+                            </div>
+                        </a>
+                        <div class="miniArtDiv">
+                            <i class="fa-solid fa-comments"></i>
+                            <p class="noticiasArMiniP">9 comentarios</p>
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="noticiasArMiniP">28/Jun/22 </p>
                         </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">10 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">18/Jul/22 </p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new7.webp" alt="Guerreros luchando por la victoria"
-                                class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
-                        </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Chivalry 2 anuncia el fin de su exclusividad en Epic Games Store y
-                                su llegada a Steam con nuevo DLC
-                            </h3>
-                            <p class="noticiasArtP">La conferencia de PC Games Show del Summer Game Fest 2022 ha dado la
-                                sorpresa con Chivalry 2</p>
-                        </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">8 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">18/Jul/22 </p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new8.webp" alt="Gabe Newell respondiendo preguntas"
-                                class="noticiasArtImg">
-                            <p class="noticiasArtCat">Artículo</p>
-                        </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Gabe Newell cree que el Metaverso no aporta nada nuevo «Es
-                                absurdo» </h3>
-                            <p class="noticiasArtP">Gabe Newell piensa que el Metaverso es una mentira, y nosotros, como
-                                él, pensamos lo mismo</p>
-                        </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">12 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">17/Jul/22 </p>
-                    </div>
-                </article>
-                <article class="noticiasArtMain">
-                    <a href="#">
-                        <div class="noticiasArtImgDiv">
-                            <img src="img/noticias/new9.webp" alt="Un nuevo personaje misterioso" class="noticiasArtImg">
-                            <p class="noticiasArtCat">Noticia</p>
-                        </div>
-                        <div class="noticiasArtDiv">
-                            <h3 class="noticiasArtH3">Zenless Zone Zero muestra el combate y nuevos personajes en este
-                                gameplay divertido
-                            </h3>
-                            <p class="noticiasArtP">Un nuevo tráiler de Zenless Zone Zero, la aventura de acción
-                                anunciada el mes pasado para PC, Android y iPhone</p>
-                        </div>
-                    </a>
-                    <div class="miniArtDiv">
-                        <i class="fa-solid fa-comments"></i>
-                        <p class="noticiasArMiniP">25 comentarios</p>
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="noticiasArMiniP">15/Jul/22 </p>
-                    </div>
-                </article>
+                    </article>
+                </section>
             </section>
         </main>
     </div>
