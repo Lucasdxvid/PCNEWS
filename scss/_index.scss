@@ -734,6 +734,14 @@
         width: 10em;
         height: 9em;
     }
+
+
+    .articleRight {
+
+        &:hover {
+            transform: none;
+        }
+    }
 }
 
 // Media Query laptop-Tablet

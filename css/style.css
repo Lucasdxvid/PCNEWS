@@ -798,6 +798,9 @@ header {
     width: 10em;
     height: 9em;
   }
+  .articleRight:hover {
+    transform: none;
+  }
 }
 @media only screen and (min-width: 561px) and (max-width: 834px) {
   .boxText {
@@ -1130,8 +1133,8 @@ header {
     border-top-right-radius: 8px;
   }
   .guiaArtMain:hover {
-    transform: translatex(0px);
-    transition: transform 0.2s;
+    transform: none;
+    transition: none;
   }
   .guiaArtImg {
     width: 100%;
@@ -1866,7 +1869,7 @@ header {
     line-height: 300%;
   }
   .noticiasArtMain:hover {
-    transform: translatey(0px);
+    transform: none;
   }
 }
 @media only screen and (min-width: 661px) and (max-width: 666px) {
