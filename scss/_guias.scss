@@ -45,22 +45,75 @@
 
 // Guias - MID SECTION 
 
-.guiaMidSection {
 
+.guiaMidSection {
     input[type="radio"] {
         position: absolute;
         left: -9999px;
     }
 
-    [value="todo"]:checked~.filters [for="todo"],
-    [value="logros"]:checked~.filters [for="logros"],
-    [value="trucos"]:checked~.filters [for="trucos"],
-    [value="guias"]:checked~.filters [for="guias"],
-    [value="All"]:checked~.guiaPosts [data-category],
-    [value="logros"]:checked~.guiaPosts .guiaPost:not([data-category~="logros"]),
-    [value="trucos"]:checked~.guiaPosts .guiaPost:not([data-category~="trucos"]),
-    [value="guias"]:checked~.guiaPosts .guiaPost:not([data-category~="guias"]) {
-        display: none;
+    [value="todo"] {
+        &:checked~.filters {
+            [for="todo"] {
+                display: none;
+            }
+        }
+    }
+
+    [value="logros"] {
+        &:checked~.filters {
+            [for="logros"] {
+                display: none;
+            }
+        }
+
+        &:checked~.guiaPosts {
+            .guiaPost {
+                &:not([data-category~="logros"]) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [value="trucos"] {
+        &:checked~.filters {
+            [for="trucos"] {
+                display: none;
+            }
+        }
+
+        &:checked~.guiaPosts {
+            .guiaPost {
+                &:not([data-category~="trucos"]) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [value="guias"] {
+        &:checked~.filters {
+            [for="guias"] {
+                display: none;
+            }
+        }
+
+        &:checked~.guiaPosts {
+            .guiaPost {
+                &:not([data-category~="guias"]) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [value="All"] {
+        &:checked~.guiaPosts {
+            [data-category] {
+                display: none;
+            }
+        }
     }
 }
 

@@ -317,12 +317,18 @@
 .mainRightBox {
     display: flex;
     width: 80%;
-    border-bottom: 1px map-get($map: $colores, $key: "border2") solid;
     margin-top: 2%;
     padding-bottom: 2%;
     border-bottom: 1px map-get($map: $colores, $key: "text2") solid;
     align-items: center;
     justify-content: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .rightBoxImgDiv {
@@ -418,27 +424,34 @@
     margin: 0.5em 1em 0.3em 4%;
 }
 
-.articleLeft {
+.articleRight {
     width: 80%;
     border: solid map-get($map: $colores, $key: "progress") 0.2em;
     border-radius: 0.5em;
     position: relative;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
+    transform: scale(1.0);
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
-.articleLeftImg {
+.articleRightImg {
     width: 100%;
     height: 15em;
 }
 
-.articleLeftH3 {
+.articleRightH3 {
     font-size: 1.1em;
     text-shadow: $textShadow1;
 }
 
-.articleLeftCat {
+.articleRightCat {
     position: absolute;
     top: 5%;
     margin-left: 3%;
@@ -449,9 +462,9 @@
     font-size: 1.2em;
 }
 
-.articleLeftLink {
+.articleRightLink {
     color: map-get($map: $colores, $key:"text2");
-    background: map-get($map: $colores, $key:"cat5");
+    background: map-get($map: $colores, $key:"bg9");
     margin: 0;
 
     &:hover {
@@ -729,11 +742,11 @@
     .boxText {
         font-size: 0.8em;
     }
-    
+
     .boxText2 {
         font-size: 1em;
         top: 77%;
-    }  
+    }
 }
 
 // Media Query Mobile General

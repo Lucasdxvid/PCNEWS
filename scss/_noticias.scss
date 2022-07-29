@@ -46,24 +46,80 @@
 
 // Noticias - MID SECTION 
 
-.noticiasMidSection {
 
+.noticiasMidSection {
     input[type="radio"] {
         position: absolute;
         left: -9999px;
     }
 
-    [value="todo2"]:checked~.filters [for="todo2"],
-    [value="popular"]:checked~.filters [for="popular"],
-    [value="NOTICIAS"]:checked~.filters [for="noticias"],
-    [value="articulos"]:checked~.filters [for="articulos"],
-    [value="All"]:checked~.noticiasPosts [data-category],
-    [value="popular"]:checked~.noticiasPosts .noticiasPost:not([data-category~="popular"]),
-    [value="noticias"]:checked~.noticiasPosts .noticiasPost:not([data-category~="noticias"]),
-    [value="articulos"]:checked~.noticiasPosts .noticiasPost:not([data-category~="articulos"]) {
-        display: none;
+    [value="todo2"] {
+        &:checked~.filters {
+            [for="todo2"] {
+                display: none;
+            }
+        }
+    }
+
+    [value="popular"] {
+        &:checked~.filters {
+            [for="popular"] {
+                display: none;
+            }
+        }
+
+        &:checked~.noticiasPosts {
+            .noticiasPost {
+                &:not([data-category~="popular"]) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [value="NOTICIAS"] {
+        &:checked~.filters {
+            [for="noticias"] {
+                display: none;
+            }
+        }
+    }
+
+    [value="articulos"] {
+        &:checked~.filters {
+            [for="articulos"] {
+                display: none;
+            }
+        }
+
+        &:checked~.noticiasPosts {
+            .noticiasPost {
+                &:not([data-category~="articulos"]) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [value="All"] {
+        &:checked~.noticiasPosts {
+            [data-category] {
+                display: none;
+            }
+        }
+    }
+
+    [value="noticias"] {
+        &:checked~.noticiasPosts {
+            .noticiasPost {
+                &:not([data-category~="noticias"]) {
+                    display: none;
+                }
+            }
+        }
     }
 }
+
 
 .noticiasCatUl {
     background: map-get($map: $colores, $key: "cat3");

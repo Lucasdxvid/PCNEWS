@@ -29,17 +29,34 @@ header {
     }
 }
 
-.navbar a:hover,
-.navbar a:focus,
-.navbar a:active {
-    color: map-get($map: $colores, $key: "link3");
-    animation-name: reload;
-    animation-duration: 0.3s;
+
+.navbar {
+    a {
+        &:hover {
+            animation-name: reload;
+            animation-duration: 0.3s;
+            color: map-get($map: $colores, $key: "link3");
+        }
+
+        &:focus {
+            animation-name: reload;
+            animation-duration: 0.3s;
+            color: map-get($map: $colores, $key: "link3");
+        }
+
+        &:active {
+            animation-name: reload;
+            animation-duration: 0.3s;
+            color: map-get($map: $colores, $key: "link3");
+        }
+    }
 }
 
-.navbar-brand:hover {
-    animation-name: reload;
-    animation-duration: 0.3s;
+.navbar-brand {
+    &:hover {
+        animation-name: reload;
+        animation-duration: 0.3s;
+    }
 }
 
 .navbar-nav {
@@ -53,11 +70,22 @@ header {
     border: none;
 }
 
-.navBtn:focus,
-.navBtn:hover,
-.navBtn:active {
-    background-color: map-get($map: $colores, $key: "link4");
-    border: none;
+
+.navBtn {
+    &:focus {
+        background-color: map-get($map: $colores, $key: "link4");
+        border: none;
+    }
+
+    &:hover {
+        background-color: map-get($map: $colores, $key: "link4");
+        border: none;
+    }
+
+    &:active {
+        background-color: map-get($map: $colores, $key: "link4");
+        border: none;
+    }
 }
 
 .dropdown-menu {
