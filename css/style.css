@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul, ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -980,6 +980,32 @@ header {
 .guiaCatLink:hover {
   color: #ea00ff;
   font-weight: 900px;
+}
+
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+
+[value=TODO]:checked ~ .filters [for=TODO],
+[value=LOGROS]:checked ~ .filters [for=LOGROS],
+[value=TRUCOS]:checked ~ .filters [for=TRUCOS],
+[value=GUIAS]:checked ~ .filters [for=GUIAS],
+[value=WordPress]:checked ~ .filters [for=WordPress],
+[value=Slider]:checked ~ .filters [for=Slider],
+[value="fullPage.js"]:checked ~ .filters [for="fullPage.js"] {
+  background: var(--green);
+  color: var(--white);
+}
+
+[value=All]:checked ~ .posts [data-category] {
+  display: block;
+}
+
+[value=LOGROS]:checked ~ .posts .post:not([data-category~=LOGROS]),
+[value=TRUCOS]:checked ~ .posts .post:not([data-category~=TRUCOS]),
+[value=GUIAS]:checked ~ .posts .post:not([data-category~=GUIAS]) {
+  display: none;
 }
 
 .guiaArtSection {
