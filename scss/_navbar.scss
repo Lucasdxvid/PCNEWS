@@ -29,7 +29,6 @@ header {
     }
 }
 
-
 .navbar {
     a {
         &:hover {
@@ -70,7 +69,6 @@ header {
     border: none;
 }
 
-
 .navBtn {
     &:focus {
         background-color: map-get($map: $colores, $key: "link4");
@@ -92,11 +90,21 @@ header {
     border: none;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus,
-.dropdown-item:active {
-    background-color: none;
-    background: none;
+.dropdown-item {
+    &:hover {
+        background-color: none;
+        background: none;
+    }
+
+    &:focus {
+        background-color: none;
+        background: none;
+    }
+
+    &:active {
+        background-color: none;
+        background: none;
+    }
 }
 
 .navSearchImg {
