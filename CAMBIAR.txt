@@ -1,0 +1,44 @@
+pagina error 404
+reveer lo de sass 2
+---------------------------
+carrusel vertical para videos
+posible subpagina de imagenes
+
+
+
+
+
+
+npm run sass:watch
+
+Fixed:
+X footer sintaxis X
+X Pub del index size X
+X Fix maintitleAnim X
+X nav search X
+X letras mayusculas de guia X
+X icono de formulario X
+X color hover link pink X
+X emparejamiento de cat X
+X carrusel index botones X
+X fixear review X
+X categoria noticias (añadir otro para rellenar) X
+X navbar media query X
+X ARREGLAR MINI ICONO PAGINA FAVICON X
+X RESPONSIVE mobile formulario de contacto (tamaño) X
+X fixear imagen mobile de noticias (size y px especificos) y de otras subpaginas X
+X posiblemente size imagenes e imagenes estiradas X
+X usar map para colores, font size or etc (SASS) X
+X variables X
+X padding/margin de noticias (font-height) X
+X color de contenedor de VIDEOS X
+X Ver video de configuraciones globales (optimizacion) X
+X videos section editar X
+X arreglar focus de contacto button X
+X cambiar divs por semanticas, alts de img, webps, etc X
+X favicon pagina X
+X cambios font size de guias y otros en mobile X
+X vars arriba de maps X
+X review formato mobile X
+X clases sin uso en guias X
+X hacer filtros en noticias y guia X
