@@ -1,47 +1,25 @@
 // Noticias - MAIN
 
 .noticiasMainDiv {
-    display: flex;
-    justify-content: center;
+   @extend .mainPagesDiv;
 }
 
 .noticiasMain {
-    background: map-get($map: $colores, $key: "bg2");
-    animation-name: reload;
-    animation-duration: 0.2s;
-    width: 60%;
+    @extend .mainPages;
 }
 
 // Noticias - TOP SECTION 
 
 .noticiasTopSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    @extend .mainTitleSection;
+ }
 
 .noticiasMainTitleDiv {
-    width: 99%;
-    border-radius: 10px;
-    margin: 0.4%;
+    @extend .mainTitleDiv;
 }
 
 .noticiasMainTitle {
-    color: map-get($map: $colores, $key: "text2");
-    text-align: center;
-    line-height: 400%;
-    font-size: 4em;
-    font-weight: 1000;
-    text-shadow: $titleShadow1;
-    background-image: $bgMain;
-    background-position: 1%;
-    transition: 1s;
-
-    &:hover {
-        text-shadow: $titleShadow2;
-        background-position: 20%;
-        transition: 1s;
-    }
+    @extend .mainTitle;
 }
 
 // Noticias - MID SECTION 
@@ -217,33 +195,9 @@
 
 // Noticias - MEDIA QUERY 
 
-// Media Query Laptop - Notebook BIG
-
-@media only screen and (min-width: 1516px) and (max-width:1702px) {
-    .noticiasMain {
-        width: 75vw;
-    }
-}
-
-// Media Query Laptop - Notebook
-
-@media only screen and (min-width: 992px) and (max-width:1515px) {
-    .noticiasMain {
-        width: 85vw;
-    }
-}
-
-// Media Query laptop - Tablet-Mobile General
+// Media Query Tablet-Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
-    .noticiasMain {
-        width: 100%;
-    }
-
-    .noticiasMainTitle {
-        line-height: 200%;
-    }
-
     .noticiasCatUl {
         text-align: center;
         flex-direction: row;
@@ -273,11 +227,6 @@
 // Media Query Mobile General
 
 @media only screen and (min-width: 1px) and (max-width: 660px) {
-    .noticiasMainTitle {
-        font-size: 2em;
-        overflow: hidden;
-    }
-
     .noticiasCatUl {
         flex-direction: column;
         border-radius: 1%;

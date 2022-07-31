@@ -1,46 +1,25 @@
 // Guias - MAIN 
 
 .guiaMainDiv {
-    display: flex;
-    justify-content: center;
+    @extend .mainPagesDiv;
 }
 
 .guiaMain {
-    background: map-get($map: $colores, $key: "bg2");
-    width: 60%;
-    animation-name: reload;
-    animation-duration: 0.5s;
+    @extend .mainPages;
 }
 
 // Guias - TOP SECTION 
 
 .guiaTopSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   @extend .mainTitleSection;
 }
 
 .guiaMainTitleDiv {
-    border-radius: 10px;
-    margin: 0.4%;
+    @extend .mainTitleDiv;
 }
 
 .guiaMainTitle {
-    color: white;
-    text-align: center;
-    line-height: 400%;
-    font-size: 4em;
-    font-weight: 1000;
-    text-shadow: $titleShadow1;
-    background-image: $bgMain;
-    background-position: 1%;
-    transition: 1s;
-
-    &:hover {
-        text-shadow: $titleShadow2;
-        background-position: 20%;
-        transition: 1s;
-    }
+    @extend .mainTitle;
 }
 
 // Guias - MID SECTION 
@@ -224,33 +203,9 @@
 
 // Guias - MEDIA QUERY 
 
-// Media Query Laptop - Notebook BIG
-
-@media only screen and (min-width: 1516px) and (max-width:1702px) {
-    .guiaMain {
-        width: 75vw;
-    }
-}
-
-// Media Query Laptop - Notebook
-
-@media only screen and (min-width: 992px) and (max-width:1515px) {
-    .guiaMain {
-        width: 85vw;
-    }
-}
-
-// Media Query laptop-Tablet-Mobile General
+// Media Query Tablet - Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
-    .guiaMain {
-        width: 100%;
-    }
-
-    .guiaMainTitle {
-        line-height: 200%;
-    }
-
     .guiaCatUl {
         text-align: center;
         width: 90%;
@@ -330,11 +285,6 @@
 
     .guiaMidSection {
         align-items: center;
-    }
-
-    .guiaMainTitle {
-        font-size: 2em;
-        overflow: hidden;
     }
 
     .guiaCatUl {

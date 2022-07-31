@@ -1,23 +1,25 @@
 // Contacto - MAIN
 
 .contactMainDiv {
-    display: flex;
-    justify-content: center;
+    @extend .mainPagesDiv;
 }
 
 .contactMain {
-    background: map-get($map: $colores, $key: "bg2");
-    width: 60%;
-    animation-name: reload;
-    animation-duration: 0.5s;
+    @extend .mainPages;
 }
 
 // Contacto - TOP SECTION
 
 .contactTopSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .mainTitleSection;
+}
+
+.contactMainTitleDiv {
+    @extend .mainTitleDiv;
+}
+
+.contactMainTitle {
+    @extend .mainTitle;
 }
 
 // Contacto - MID SECTION
@@ -196,29 +198,9 @@ input[type="search"] {
 
 // Contacto - MEDIA QUERY 
 
-/* Media Query Laptop - Notebook BIG */
-
-@media only screen and (min-width: 1516px) and (max-width:1702px) {
-    .contactMain {
-        width: 75vw;
-    }
-}
-
-/* Media Query Laptop - Notebook */
-
-@media only screen and (min-width: 992px) and (max-width:1515px) {
-    .contactMain {
-        width: 85vw;
-    }
-}
-
-/* Media Query Mobile Small Size */
+// Media Query Tablet - Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
-    .contactMain {
-        width: 100%;
-    }
-
     .contactFormContainer {
         width: 100%;
     }
@@ -236,7 +218,6 @@ input[type="search"] {
 /* Media Query Mobile Small Size */
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
-
     .contactFormTitle {
         font-size: 1.7em;
     }

@@ -54,9 +54,14 @@
 
 // Index - TOP SECTION
 
-.sectionTop0,
-.indexMainTitleDiv {
-    display: none;
+.indexMaintitleDiv {
+    @extend .mainTitleDiv;
+}
+
+.indexMainTitle {
+    @extend .mainTitle;
+    line-height: 200%;
+    margin: 0.1%;
 }
 
 .sectionTop {
@@ -547,7 +552,7 @@
     }
 }
 
-// Media Query Tablet-Mobile General
+// Media Query Tablet - Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
     .mainContainer {
@@ -586,55 +591,7 @@
         grid-area: footer;
     }
 
-    @keyframes reload {
-        from {
-            opacity: 0;
-            transform: scale(1);
-        }
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    .sectionTop0 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .indexMainTitleDiv {
-        width: 100%;
-        border-radius: 10px;
-        display: block;
-        margin: 1% 1%;
-        margin: 0.1em 0;
-    }
-
-    .indexMainTitle {
-        margin: 0;
-        color: map-get($map: $colores, $key: "text2");
-        text-align: center;
-        line-height: 200%;
-        font-size: 4em;
-        font-weight: 1000;
-        text-shadow: $titleShadow1;
-        font-style: italic;
-        width: 100%;
-        background-image: $bgMain;
-        background-position: 1%;
-        transition: 1s;
-
-        &:hover {
-            text-shadow: $titleShadow2;
-            background-position: 20%;
-            transition: 1s;
-        }
-    }
-
     .sectionTop {
-        margin: 0;
         flex-wrap: wrap;
     }
 
@@ -744,7 +701,7 @@
     }
 }
 
-// Media Query laptop-Tablet
+// Media Query Tablet General
 
 @media only screen and (min-width: 561px) and (max-width:834px) {
     .boxText {
@@ -760,15 +717,6 @@
 // Media Query Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:660px) {
-    .indexMainTitle {
-        font-size: 2em;
-        overflow: hidden;
-    }
-
-    .sectionTop {
-        border: 0px;
-    }
-
     .sectionTop2 {
         display: none;
     }

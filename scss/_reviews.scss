@@ -1,51 +1,30 @@
 // Reviews - MAIN
 
 .reviewMainDiv {
-    display: flex;
-    justify-content: center;
+    @extend .mainPagesDiv;
 }
 
 .reviewMain {
-    background: map-get($map: $colores, $key: "bg2");
-    width: 60%;
-    animation-name: reload;
-    animation-duration: 0.5s;
+    @extend .mainPages;
 }
 
 // Reviews - TOP SECTION
 
-.reviewSectionTop {
-    display: flex;
-    justify-content: center;
+.reviewTopSection {
+    @extend .mainTitleSection;
 }
 
 .reviewMainTitleDiv {
-    width: 99%;
-    border-radius: 10px;
-    margin: 0.4% 0;
+    @extend .mainTitleDiv;
 }
 
 .reviewMainTitle {
-    color: map-get($map: $colores, $key: "text2");
-    text-align: center;
-    line-height: 400%;
-    font-size: 4em;
-    font-weight: 1000;
-    text-shadow: $titleShadow1;
-    background-image: $bgMain;
-    background-position: 1%;
-    transition: 1s;
-
-    &:hover {
-        text-shadow: $titleShadow2;
-        background-position: 20%;
-        transition: 1s;
-    }
+    @extend .mainTitle;
 }
 
 // Review - MID SECTION
 
-.reviewArtSection {
+.reviewMidSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -409,11 +388,6 @@
     display: none;
 }
 
-.reviewSection {
-    display: flex;
-    flex-direction: column;
-}
-
 .reviewArt {
     display: flex;
     width: 40%;
@@ -460,38 +434,14 @@
 
 // Index - MEDIA QUERY 
 
-// Media Query Laptop - Notebook BIG
-
-@media only screen and (min-width: 1516px) and (max-width:1702px) {
-    .reviewMain {
-        width: 75vw;
-    }
-}
-
-// Media Query Laptop - Notebook
-
-@media only screen and (min-width: 992px) and (max-width:1515px) {
-    .reviewMain {
-        width: 85vw;
-    }
-}
-
-// Media Query laptop-Tablet-Mobile General
+// Media Query Tablet-Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
-    .reviewMainTitle {
-        line-height: 200%;
-    }
-
-    .reviewMain {
-        width: 100%;
-    }
-
     .reviewBar {
         display: none;
     }
 
-    .reviewArtSection {
+    .reviewMidSection {
         flex-flow: row wrap;
     }
 
@@ -532,14 +482,6 @@
 // Media Query Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:660px) {
-    .reviewMainTitle {
-        font-size: 2em;
-        overflow: hidden;
-    }
-
-    .reviewSection {
-        flex-direction: column;
-    }
 
     .reviewArt {
         width: 80%;
