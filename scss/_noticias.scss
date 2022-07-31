@@ -101,8 +101,7 @@
 
 .noticiasCatUl {
     background: map-get($map: $colores, $key: "cat3");
-    display: flex;
-    justify-content: space-around;
+    @include flex (row nowrap, space-around, normal);
     width: 80%;
     margin-bottom: 1%;
     border-radius: 8px;
@@ -124,18 +123,15 @@
 }
 
 .noticiasMidSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex (row wrap, center, normal);
 }
 
 .noticiasArtMain {
-    display: flex;
+    @include flex (column nowrap, normal, normal);
     width: 20em;
     height: auto;
     margin: 1%;
     overflow: hidden;
-    flex-direction: column;
 
     &:hover {
         transform: translatey(5px);
@@ -183,7 +179,7 @@
 }
 
 .miniArtDiv {
-    display: flex;
+    @include flex (row nowrap, normal, normal);
 }
 
 .noticiasArMiniP {
@@ -254,11 +250,7 @@
         width: 100%;
         height: 16em;
     }
-
-    .noticiasArtDiv {
-        height: auto;
-    }
-
+    
     .noticiasArtH3 {
         font-size: 1.5em;
         text-align: center;
@@ -271,7 +263,6 @@
 
     .miniArtDiv {
         justify-content: center;
-        margin-top: 2%;
     }
 }
 
@@ -285,6 +276,10 @@
     .noticiasArtImg {
         width: 100%;
         height: 15em;
+    }
+
+    .miniArtDiv {
+        margin-top: 3%;
     }
 }
 
@@ -306,5 +301,9 @@
 
     .noticiasArtP {
         display: none;
+    }
+
+    .miniArtDiv {
+        margin-top: 0;
     }
 }

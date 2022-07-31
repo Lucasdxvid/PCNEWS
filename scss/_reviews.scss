@@ -25,9 +25,7 @@
 // Review - MID SECTION
 
 .reviewMidSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex (row wrap, center, normal);
     border: 1px map-get($map: $colores, $key: "border4") solid;
 }
 
@@ -389,10 +387,9 @@
 }
 
 .reviewArt {
-    display: flex;
+    @include flex (row nowrap, normal, center);
     width: 40%;
     margin: 3% 2%;
-    align-items: stretch;
 }
 
 .reviewArtLink {
@@ -447,7 +444,6 @@
 
     .reviewArt {
         flex-direction: column;
-        align-items: center;
         border: 1px rgba(0, 0, 0, 0.048) solid;
         background-color: map-get($map: $colores, $key: "border3");
         border-radius: 8px;

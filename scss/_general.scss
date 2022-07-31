@@ -45,8 +45,7 @@ ol {
 // General - CLASS
 
 .mainPagesDiv {
-    display: flex;
-    justify-content: center;
+    @include flex (row nowrap, center, normal);
 }
 
 .mainPages {
@@ -57,9 +56,7 @@ ol {
 }
 
 .mainTitleSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column nowrap, normal, center);
     padding: 0.1%;
 }
 

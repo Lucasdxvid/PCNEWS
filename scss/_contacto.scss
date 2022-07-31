@@ -25,9 +25,7 @@
 // Contacto - MID SECTION
 
 .contactMidSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column nowrap, normal, center);
 }
 
 .contactFormContainer {
@@ -123,9 +121,7 @@ input[type="search"] {
 }
 
 .contactGenreDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex (row wrap, center, normal);
     background-color: map-get($map: $colores, $key: "bg6");
 }
 
@@ -150,8 +146,7 @@ input[type="search"] {
 }
 
 .contactFormButtons {
-    display: flex;
-    justify-content: center;
+    @include flex (row nowrap, center, normal);
 }
 
 .btnContact {
@@ -191,9 +186,7 @@ input[type="search"] {
 }
 
 .contactAsideSection {
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
+    @include flex (row wrap, center, normal);
 }
 
 // Contacto - MEDIA QUERY 
