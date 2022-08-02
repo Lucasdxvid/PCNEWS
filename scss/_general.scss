@@ -51,7 +51,7 @@ ol {
 .mainPages {
     background: map-get($map: $colores, $key: "bg2");
     animation-name: reload;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
     width: 60%;
 }
 
