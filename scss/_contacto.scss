@@ -138,6 +138,19 @@ input[type="search"] {
     margin: 1% 0;
 }
 
+.form-check-input {
+    &:focus {
+        border-color: map-get($map: $colores, $key: "bg6");
+        box-shadow: $boxshadow1;
+        outline: 0 none;
+    }
+
+    &:checked {
+        background: map-get($map: $colores, $key: "border6");
+        border: none;
+    }
+}
+
 .spanBg {
     background: map-get($map: $colores, $key: "bg8");
     border: black solid 0px;
