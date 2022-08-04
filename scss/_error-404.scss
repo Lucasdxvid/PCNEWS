@@ -40,11 +40,11 @@
     width: 70%;
 }
 
-.errorLi {
+.errorLink {
     text-align: center;
 }
 
-.errorLink {
+.errorLi {
     font-size: map-get($map: $fontSize, $key: "fS12");
     color: map-get($map: $colores, $key: "text2");
     text-shadow: $textShadow1;
@@ -75,7 +75,7 @@
         border: none;
     }
 
-    .errorLi {
+    .errorLink {
         background: map-get($map: $colores, $key: "cat1");
         border: solid map-get($map: $colores, $key: "border1") 1px;
         border-radius: 5px;
@@ -83,7 +83,7 @@
         margin-top: 5%;
     }
 
-    .errorLink {
+    .errorLi {
         font-size: map-get($map: $fontSize, $key: "fS20");
     }
 }
@@ -113,7 +113,7 @@
         text-align: center;
     }
 
-    .errorLink {
+    .errorLi {
         font-size: map-get($map: $fontSize, $key: "fS12");
     }
 }
@@ -121,11 +121,11 @@
 // Media Query Mobile Small Size
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
-    .errorLi {
+    .errorLink {
         width: 15em;
     }
 
-    .errorLink {
+    .errorLi {
         font-size: map-get($map: $fontSize, $key: "fS12");
     }
 }
