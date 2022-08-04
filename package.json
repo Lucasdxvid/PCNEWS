@@ -1,7 +1,7 @@
 {
   "name": "pcnews",
   "version": "1.0.0",
-  "description": "El repositorio de primer pagina web donde se veran los cambios a lo largo del tiempo https://athloner.github.io/PCNEWS/",
+  "description": "Mi proyecto PCNEWS donde encontraras las mejores noticias, artículos y reseñas de tus juegos favoritos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
