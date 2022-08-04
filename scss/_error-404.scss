@@ -48,6 +48,11 @@
     font-size: map-get($map: $fontSize, $key: "fS12");
     color: map-get($map: $colores, $key: "text2");
     text-shadow: $textShadow1;
+    font-weight: 500;
+
+    &:hover {
+        color: map-get($map: $colores, $key: "link3");
+    }
 }
 
 // Media Query Tablet - Mobile General
