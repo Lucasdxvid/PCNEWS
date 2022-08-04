@@ -109,13 +109,13 @@
 
     &:hover {
         color: map-get($map: $colores, $key: "link3");
-        font-weight: 900;
+        font-weight: map-get($map: $fontWeight, $key: "fW9");
     }
 }
 
 .guiaCatLab {
-    font-size: 2em;
-    font-weight: 800;
+    font-size: map-get($map: $fontSize, $key: "fS20");
+    font-weight: map-get($map: $fontWeight, $key: "fW8");
     text-shadow: $textShadow1;
 }
 
@@ -159,8 +159,8 @@
 }
 
 .guiaArtH3 {
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: map-get($map: $fontSize, $key: "fS14");
+    font-weight: map-get($map: $fontWeight, $key: "fW6");
     padding-bottom: 0.5em;
     text-align: left;
     margin-left: 1%;
@@ -173,15 +173,15 @@
     border-radius: 6px;
     border: 1px map-get($map: $colores, $key: "border3") solid;
     background: map-get($map: $colores, $key: "cat4");
-    font-weight: 900;
+    font-weight: map-get($map: $fontWeight, $key: "fW9");
     width: 5em;
     text-align: center;
 }
 
 .guiaArtP {
     line-height: 1em;
-    font-size: 1em;
-    font-weight: 400;
+    font-size: map-get($map: $fontSize, $key: "fS10");
+    font-weight: map-get($map: $fontWeight, $key: "fW4");
     text-align: center;
     width: 100%;
     padding: 0 5%;
@@ -192,7 +192,7 @@
 
     &:hover {
         color: map-get($map: $colores, $key: "link2");
-        font-weight: 600;
+        font-weight: map-get($map: $fontWeight, $key: "fW6");
         border: none;
     }
 }
@@ -209,7 +209,7 @@
     }
 
     .guiaCatLab {
-        font-size: 1.9em;
+        font-size: map-get($map: $fontSize, $key: "fS19");
         line-height: 300%;
     }
 
@@ -247,8 +247,8 @@
     }
 
     .guiaArtH3 {
-        font-size: 1.5em;
-        font-weight: 0;
+        font-size: map-get($map: $fontSize, $key: "fS1.5");
+        font-weight: map-get($map: $fontWeight, $key: "fW4");
         padding-bottom: 0;
         text-align: center;
         padding: 2% 0 2% 0;
@@ -259,10 +259,10 @@
         margin: 0;
         border: 0;
         border-radius: 0;
-        font-weight: 2000;
+        font-weight: map-get($map: $fontWeight, $key: "fW7");
         width: 100%;
         text-align: center;
-        font-size: 1.4em;
+        font-size: map-get($map: $fontSize, $key: "fS14");
     }
 
     .guiaArtP {
@@ -294,7 +294,7 @@
     }
 
     .guiaCatLab {
-        font-size: 1.4em;
+        font-size: map-get($map: $fontSize, $key: "fS14");
         margin: 1% 0 1% 0%;
         text-align: center;
     }
@@ -304,7 +304,7 @@
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
     .guiaArtH3 {
-        font-size: 1.1em;
+        font-size: map-get($map: $fontSize, $key: "fS11");
         padding: 1% 0;
     }
 }

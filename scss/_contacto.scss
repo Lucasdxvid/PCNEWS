@@ -101,9 +101,9 @@ input[type="search"] {
 
 .contactFormTitle {
     text-align: center;
-    font-size: 2.5em;
+    font-size: map-get($map: $fontSize, $key: "fS25");
     line-height: 2em;
-    font-weight: 700;
+    font-weight: map-get($map: $fontWeight, $key: "fW7");
     color: map-get($map: $colores, $key: "text2");
     text-shadow: $titleShadow1;
 
@@ -195,7 +195,7 @@ input[type="search"] {
     text-align: left;
     margin-left: 2%;
     margin-bottom: 1%;
-    font-size: 1.5em;
+    font-size: map-get($map: $fontSize, $key: "fS15");
 }
 
 .contactAsideSection {
@@ -209,6 +209,7 @@ input[type="search"] {
 @media only screen and (min-width: 1px) and (max-width:991px) {
     .contactFormContainer {
         width: 100%;
+        border-radius: 0;
     }
 }
 
@@ -216,7 +217,7 @@ input[type="search"] {
 
 @media only screen and (min-width: 367px) and (max-width:440px) {
     .contactFormTitle {
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: "fS20");
     }
 }
 
@@ -225,10 +226,14 @@ input[type="search"] {
 
 @media only screen and (min-width: 1px) and (max-width:366px) {
     .contactFormTitle {
-        font-size: 1.7em;
+        font-size: map-get($map: $fontSize, $key: "fS17");
     }
 
     .contactAsideTitle {
-        font-size: 1em;
+        font-size: map-get($map: $fontSize, $key: "fS10");
+    }
+
+    .btnContact {
+        width: 40%;
     }
 }

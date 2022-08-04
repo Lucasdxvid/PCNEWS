@@ -99,8 +99,8 @@
         height: 100%;
         text-align: center;
         position: absolute;
-        font-weight: 1000;
-        font-size: 3em;
+        font-weight: map-get($map: $fontWeight, $key: "fW10");
+        font-size: map-get($map: $fontSize, $key: "fS30");
         color: map-get($map: $colores, $key: "text2");
         text-shadow: $textShadow3;
         z-index: 2;
@@ -397,7 +397,7 @@
 
     &:hover {
         color: map-get($map: $colores, $key: "link2");
-        font-weight: 600;
+        font-weight: map-get($map: $fontWeight, $key: "fW6");
     }
 }
 
@@ -416,16 +416,16 @@
 }
 
 .reviewArtH3 {
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: map-get($map: $fontSize, $key: "fS14");
+    font-weight: map-get($map: $fontWeight, $key: "fW6");
     padding-bottom: 0.5em;
     text-align: center;
 }
 
 .reviewArtP {
     line-height: 1em;
-    font-size: 1em;
-    font-weight: 400;
+    font-size: map-get($map: $fontSize, $key: "fS10");
+    font-weight: map-get($map: $fontWeight, $key: "fW4");
     text-align: center;
 }
 
@@ -467,8 +467,8 @@
         padding: 8%;
         z-index: 5;
         position: absolute;
-        font-weight: 1000;
-        font-size: 7em;
+        font-weight: map-get($map: $fontWeight, $key: "fW10");
+        font-size: map-get($map: $fontSize, $key: "fS70");
         color: map-get($map: $colores, $key: "text2");
         text-shadow: $textShadow4;
         display: inline;
@@ -488,11 +488,11 @@
     }
 
     .reviewArtH3 {
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: "fS20");
     }
 
     .reviewArtP {
-        font-size: 1.1em;
+        font-size: map-get($map: $fontSize, $key: "fS11");
     }
 
     .reviewArtImgMobile {
@@ -500,7 +500,7 @@
     }
 
     .reviewPuntaje {
-        font-size: 7em;
+        font-size: map-get($map: $fontSize, $key: "fS70");
         padding: 16%;
     }
 }
@@ -509,7 +509,7 @@
 
 @media only screen and (min-width: 1px) and (max-width: 348px) {
     .reviewPuntaje {
-        font-size: 4em;
+        font-size: map-get($map: $fontSize, $key: "fS40");
         padding: 15%;
     }
 
@@ -518,10 +518,10 @@
     }
 
     .reviewArtH3 {
-        font-size: 1.1em;
+        font-size: map-get($map: $fontSize, $key: "fS11");
     }
 
     .reviewArtP {
-       font-size: 0.8em;
+        font-size: map-get($map: $fontSize, $key: "fS08");
     }
 }

@@ -6,12 +6,12 @@ $colores: (
     "bg1" : linear-gradient(30deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%),
     "bg2" : linear-gradient(90deg, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%),
     "bg3" : #5900ff86,
-    "bg4" : linear-gradient(130deg, #0b010e 5%, #360428  30%, #140113 60%,),
+    "bg4" : linear-gradient(130deg, #0b010e 5%, #360428 30%, #140113 60%, ),
     "bg5" : #ead9f3,
     "bg6" : #aa0dff38,
     "bg7" : linear-gradient(352deg, #5f15be 20%, #730d81 80%),
     "bg8" : linear-gradient(20deg, rgb(58, 11, 102) 20%, rgb(97, 3, 160) 80%),
-    "bg9" : linear-gradient(170deg, #5900ff86  20%, #41098186 70%),
+    "bg9" : linear-gradient(170deg, #5900ff86 20%, #41098186 70%),
     "text1" : #000000,
     "text2" : #ffffff,
     "text3" : #e9e9e9,
@@ -35,5 +35,37 @@ $colores: (
     "link2" : #6a00ff,
     "link3" : #ea00ff,
     "link4" : #8e0cc2,
-)
+);
 
+// Font Weight
+
+$fontWeight: (
+    "fW4" : 400,
+    "fW6" : 600,
+    "fW7" : 700,
+    "fW8" : 800,
+    "fW9" : 900,
+    "fW10" : 1000,
+);
+
+// Font Size
+
+$fontSize: (
+    "fS05" : 0.5em,
+    "fS08" : 0.8em,
+    "fS09" : 0.9em,
+    "fS10" : 1em,
+    "fS11" : 1.1em,
+    "fS12" : 1.2em,
+    "fS13" : 1.3em,
+    "fS14" : 1.4em,
+    "fS15" : 1.5em,
+    "fS17" : 1.7em,
+    "fS18" : 1.8em,
+    "fS19" : 1.9em,
+    "fS20" : 2em,
+    "fS25" : 2.5em,
+    "fS30" : 3em,
+    "fS40" : 4em,
+    "fS70" : 7em,
+);

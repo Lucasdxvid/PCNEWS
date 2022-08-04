@@ -24,6 +24,7 @@ ol {
     background-image: $bgMain;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .fix {
@@ -69,8 +70,8 @@ ol {
     color: map-get($map: $colores, $key: "text2");
     text-align: center;
     line-height: 400%;
-    font-size: 4em;
-    font-weight: 1000;
+    font-size: map-get($map: $fontSize, $key: "fS40");
+    font-weight: map-get($map: $fontWeight, $key: "fW10");
     text-shadow: $titleShadow1;
     background-image: $bgMain;
     background-position: 1%;
@@ -125,6 +126,9 @@ ol {
         line-height: 200%;
         margin: 0.1%;
     }
+
+    .bodyBg {
+        background-image: none; }
 }
 
 // Media Query Mobile General
@@ -132,7 +136,7 @@ ol {
 @media only screen and (min-width: 1px) and (max-width:660px) {
 
     .mainTitle {
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: "fS20");
         overflow: hidden;
     }
 }

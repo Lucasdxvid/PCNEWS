@@ -108,8 +108,8 @@
 }
 
 .noticiasCatLab {
-    font-size: 2em;
-    font-weight: 800;
+    font-size: map-get($map: $fontSize, $key: "fS20");
+    font-weight: map-get($map: $fontWeight, $key: "fW8");
     text-shadow: $textShadow1;
 }
 
@@ -118,7 +118,7 @@
 
     &:hover {
         color: map-get($map: $colores, $key: "link3");
-        font-weight: 900;
+        font-weight: map-get($map: $fontWeight, $key: "fW9");
     }
 }
 
@@ -143,7 +143,7 @@
     text-align: center;
     color: map-get($map: $colores, $key: "text2");
     background: map-get($map: $colores, $key: "cat6");
-    font-weight: 900;
+    font-weight: map-get($map: $fontWeight, $key: "fW");
 }
 
 .noticiasArtImgDiv {
@@ -168,12 +168,12 @@
 }
 
 .noticiasArtH3 {
-    font-size: 1.2em;
+    font-size: map-get($map: $fontSize, $key: "fS12");
     line-height: 1.1em;
 }
 
 .noticiasArtP {
-    font-size: 0.9em;
+    font-size: map-get($map: $fontSize, $key: "fS09");
     line-height: 1em;
     overflow: hidden;
 }
@@ -183,7 +183,7 @@
 }
 
 .noticiasArMiniP {
-    font-size: 0.9em;
+    font-size: map-get($map: $fontSize, $key: "fS09");
     color: map-get($map: $colores, $key: "text1");
     padding-left: 1%;
     padding-right: 4%;
@@ -202,7 +202,7 @@
     }
 
     .noticiasCatLab {
-        font-size: 1.9em;
+        font-size: map-get($map: $fontSize, $key: "fS19");
         margin-left: 1%;
         line-height: 300%;
     }
@@ -240,7 +240,7 @@
 
     .noticiasCatLab {
         border-radius: 1%;
-        font-size: 1.4em;
+        font-size: map-get($map: $fontSize, $key: "fS14");
         margin: 1% 0 1% 0;
         text-align: center;
     }
@@ -256,12 +256,12 @@
     }
     
     .noticiasArtH3 {
-        font-size: 1.5em;
+        font-size: map-get($map: $fontSize, $key: "fS15");
         text-align: center;
     }
 
     .noticiasArtP {
-        font-size: 1em;
+        font-size: map-get($map: $fontSize, $key: "fS10");
         text-align: center;
     }
 
@@ -300,7 +300,7 @@
     }
 
     .noticiasArtH3 {
-        font-size: 1.3em;
+        font-size: map-get($map: $fontSize, $key: "fS13");
     }
 
     .noticiasArtP {
