@@ -1,0 +1,126 @@
+// Error-404 - MAIN
+
+.errorMainDiv {
+    @extend .mainPagesDiv;
+    background: map-get($map: $colores, $key: "cat3");
+}
+
+.errorMain {
+    @include flex (column nowrap, center, center);
+}
+
+.errorDiv {
+    @include flex (column nowrap, center, center);
+    border: solid map-get($map: $colores, $key: "border5") 5px;
+    border-radius: 50%;
+    width: 156%;
+    height: 52em;
+    background-image: $bgError;
+    background-size: 100% 100%;
+}
+
+.errorH1 {
+    font-size: map-get($map: $fontSize, $key: "fS50");
+    color: map-get($map: $colores, $key: "text2");
+    text-shadow: $textShadow2;
+}
+
+.errorP {
+    font-size: map-get($map: $fontSize, $key: "fS20");
+    color: map-get($map: $colores, $key: "text2");
+    text-shadow: $textShadow1;
+}
+
+.errorUl {
+    @include flex (row nowrap, space-around, center);
+    margin-top: 5%;
+    background: map-get($map: $colores, $key: "cat1");
+    border: solid map-get($map: $colores, $key: "border1") 2px;
+    border-radius: 50px;
+    width: 70%;
+}
+
+.errorLi {
+    text-align: center;
+}
+
+.errorLink {
+    font-size: map-get($map: $fontSize, $key: "fS12");
+    color: map-get($map: $colores, $key: "text2");
+    text-shadow: $textShadow1;
+}
+
+// Media Query Tablet - Mobile General
+
+@media only screen and (min-width: 1px) and (max-width:991px) {
+    .errorDiv {
+        border-radius: 0;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .errorP {
+        font-size: map-get($map: $fontSize, $key: "fS20");
+    }
+
+    .errorUl {
+        margin-top: 10%;
+        flex-direction: column;
+        background: none;
+        border: none;
+    }
+
+    .errorLi {
+        background: map-get($map: $colores, $key: "cat1");
+        border: solid map-get($map: $colores, $key: "border1") 1px;
+        border-radius: 5px;
+        width: 20em;
+        margin-top: 5%;
+    }
+
+    .errorLink {
+        font-size: map-get($map: $fontSize, $key: "fS20");
+    }
+}
+
+// Media Query Mobile General
+
+@media only screen and (min-width: 1px) and (max-width:660px) {
+    .errorDiv {
+        background-size: 120% 100%;
+    }
+
+    .errorP {
+        font-size: map-get($map: $fontSize, $key: "fS14");
+    }
+}
+
+// Media Query Mobile Medium
+
+@media only screen and (min-width: 1px) and (max-width:440px) {
+    .errorDiv {
+        background-size: cover;
+        background-position-x: -6em;
+    }
+
+    .errorP {
+        font-size: map-get($map: $fontSize, $key: "fS14");
+        text-align: center;
+    }
+
+    .errorLink {
+        font-size: map-get($map: $fontSize, $key: "fS12");
+    }
+}
+
+// Media Query Mobile Small Size
+
+@media only screen and (min-width: 1px) and (max-width:366px) {
+    .errorLi {
+        width: 15em;
+    }
+
+    .errorLink {
+        font-size: map-get($map: $fontSize, $key: "fS12");
+    }
+}

@@ -424,8 +424,7 @@
 }
 
 .articleRightDiv {
-    display: flex;
-    flex-direction: column;
+    @include flex (column nowrap, normal, normal)
 }
 
 .articleRightImg {
