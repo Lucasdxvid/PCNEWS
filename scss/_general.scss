@@ -128,15 +128,23 @@ ol {
     }
 
     .bodyBg {
-        background-image: none; }
+        background-image: none;
+    }
 }
 
 // Media Query Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:660px) {
-
     .mainTitle {
         font-size: map-get($map: $fontSize, $key: "fS20");
         overflow: hidden;
+    }
+}
+
+// Media Query Mobile Small Size
+
+@media only screen and (min-width: 1px) and (max-width:366px) {
+    .mainTitleDiv {
+        margin: 0.08em 0;
     }
 }

@@ -451,40 +451,37 @@
 
     .reviewArtImgMobile {
         display: block;
-        object-fit: cover;
         width: 100%;
-        height: 100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        height: 15em;
     }
 
     .reviewArtDiv {
-        height: 9em;
         overflow: hidden;
     }
 
     .reviewPuntaje {
-        padding: 8%;
         z-index: 5;
         position: absolute;
+        line-height: 2.2em;
         font-weight: map-get($map: $fontWeight, $key: "fW10");
         font-size: map-get($map: $fontSize, $key: "fS70");
         color: map-get($map: $colores, $key: "text2");
         text-shadow: $textShadow4;
-        display: inline;
+        display: block;
     }
 }
 
 // Media Query Mobile General
 
 @media only screen and (min-width: 1px) and (max-width:660px) {
-
     .reviewArt {
         width: 80%;
     }
 
     .reviewArtDiv {
-        height: 10em;
+        height: 40%;
     }
 
     .reviewArtH3 {
@@ -495,13 +492,8 @@
         font-size: map-get($map: $fontSize, $key: "fS11");
     }
 
-    .reviewArtImgMobile {
-        height: 65%;
-    }
-
     .reviewPuntaje {
         font-size: map-get($map: $fontSize, $key: "fS70");
-        padding: 16%;
     }
 }
 
@@ -510,11 +502,10 @@
 @media only screen and (min-width: 1px) and (max-width: 348px) {
     .reviewPuntaje {
         font-size: map-get($map: $fontSize, $key: "fS40");
-        padding: 15%;
     }
 
-    .reviewArtDiv {
-        height: 6.2em;
+    .reviewArtImgMobile {
+        height: 8.8em;
     }
 
     .reviewArtH3 {
