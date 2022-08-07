@@ -464,6 +464,22 @@
 
 // Index - MEDIA QUERY 
 
+// Media Query 4k screens
+
+@media only screen and (min-width: 2664px) {
+    .boxText {
+        font-size: 1.5em;
+    }
+
+    .billH3 {
+        font-size: 3.5em;
+    }
+
+    .billP {
+        font-size: 2em;
+    }
+}
+
 // Media Query Laptop - Notebook BIG
 
 @media only screen and (min-width: 1516px) and (max-width:1702px) {
