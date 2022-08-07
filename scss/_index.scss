@@ -390,6 +390,7 @@
     @include flex (column nowrap, normal, center);
     margin-top: 5%;
     border-top: map-get($map: $colores, $key: "border2") 2px solid;
+    width: 100%
 }
 
 .asideArticlesSection {
@@ -429,7 +430,6 @@
 
 .articleRightImg {
     width: 100%;
-    height: 15em;
 }
 
 .articleRightH3 {
