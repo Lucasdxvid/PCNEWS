@@ -53,7 +53,7 @@ ol {
     background: map-get($map: $colores, $key: "bg2");
     animation-name: reload;
     animation-duration: 0.5s;
-    width: 60%;
+    width: 65vw;
 }
 
 .mainTitleSection {
@@ -107,7 +107,7 @@ ol {
 
 @media only screen and (min-width: 1px) and (max-width:991px) {
     .mainPages {
-        width: 100%;
+        width: 100vw;
     }
 
     @keyframes reload {
