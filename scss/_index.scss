@@ -286,6 +286,7 @@
 
 .asideReleasesContainer {
     @include flex (column nowrap, normal, center);
+    width: 100%;
 }
 
 .asideReleasesSection {
