@@ -162,14 +162,14 @@
     margin-bottom: 1%;
 }
 
-.titleLefttDiv {
+.titleLeftDiv {
     padding-left: 1%;
     margin: 1em;
+    align-self: flex-start;
 }
 
 .titleLeft {
     font-weight: map-get($map: $fontWeight, $key: "fW9");
-    text-align: left;
 }
 
 .mainLeftBox {
@@ -237,11 +237,11 @@
 .titleRightDiv {
     padding-right: 1%;
     margin: 1em;
+    align-self: flex-end;
 }
 
 .titleRight {
     font-weight: map-get($map: $fontWeight, $key: "fW9");
-    text-align: right;
 }
 
 .rightSection {
@@ -599,8 +599,10 @@
         width: 100%;
     }
 
-    .titleLefttDiv {
+    .titleLeftDiv, .titleRightDiv, .leftBottomTitle{
         padding: 0;
+        align-self: center;
+        text-decoration: underline;
     }
 
     .titleLeft {
