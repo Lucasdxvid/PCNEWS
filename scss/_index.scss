@@ -434,7 +434,7 @@
 
 @media only screen and (min-width: 2664px) {
     .boxText {
-        font-size: 1.5em;
+        font-size: map-get($map: $fontSize, $key: "fS15");
 
         &:hover {
             font-size: map-get($map: $fontSize, $key: "fS16")
@@ -442,11 +442,11 @@
     }
 
     .billH3 {
-        font-size: 3.5em;
+        font-size: map-get($map: $fontSize, $key: "fS35");
     }
 
     .billP {
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: "fS20");
     }
 }
 
