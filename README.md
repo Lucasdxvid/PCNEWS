@@ -6,4 +6,4 @@ El mismo esta inspirado en diversas paginas dedicadas informar acerca de novedad
 
 :frog: Te dejo una preview de mi sitio web en GITHUB: https://lucasdxvid.github.io/PCNEWS/ :frog:
 
-:dragon_face: También puedes mirar mi sitio web en NETLIFY: https://soft-crumble-b98816.netlify.app :dragon_face:
+:dragon_face: También puedes mirar mi sitio web en NETLIFY: https://lucasdxvid-pcnews.netlify.app :dragon_face:
