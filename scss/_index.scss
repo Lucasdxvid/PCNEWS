@@ -190,8 +190,8 @@
 .leftBoxImg {
     border: map-get($map: $colores, $key: "border1") solid 1px;
     border-radius: 50%;
-    width: 8vw;
-    height: 8vw;
+    width: 7.5vw;
+    height: 7.5vw;
     object-fit: cover;
 }
 
@@ -200,9 +200,9 @@
 }
 
 .leftBoxH3 {
-    font-size: map-get($map: $fontSize, $key: "fS13");
+    font-size: map-get($map: $fontSize, $key: "fS12");
     font-weight: map-get($map: $fontWeight, $key: "fW6");
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .leftBoxCat {
