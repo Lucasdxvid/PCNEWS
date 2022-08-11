@@ -26,6 +26,8 @@
 
 .contactMidSection {
     @include flex (column nowrap, normal, center);
+    border: 1px map-get($map: $colores, $key: "border4") solid;
+    padding-top: 1%;
 }
 
 .contactFormContainer {

@@ -26,7 +26,7 @@
 
 .reviewMidSection {
     @include flex (row wrap, center, normal);
-    border: 1px map-get($map: $colores, $key: "border4") solid;
+    border-top: 1px map-get($map: $colores, $key: "border4") solid;
 }
 
 .progress {

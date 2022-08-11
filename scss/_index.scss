@@ -419,8 +419,7 @@
     color: map-get($map: $colores, $key:"text2");
     background: map-get($map: $colores, $key:"bg9");
     margin: 0;
-    display: flex;
-    flex-direction: column-reverse;
+    @include flex (column nowrap, center, normal);
 
     &:hover {
         color: map-get($map: $colores, $key:"link1");
