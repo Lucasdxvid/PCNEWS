@@ -1,6 +1,11 @@
 # :video_game: PCNEWS :video_game:
 
-¡Bienvenido! Aquí encontraras el repositorio de mi primer página web para mi proyecto del curso de “desarrollo web”.
+¡Bienvenido! Aquí encontraras el repositorio de mi primer página web para mi proyecto utilizando HTML y CSS puro.
+
+♦ HTML
+♦ CSS
+♦ SASS
+♦ Full Responsive 
 
 El mismo esta inspirado en diversas paginas dedicadas informar acerca de novedades / noticias recientes sobre todo lo relacionado al extenso mundo del gaming debido a mi gran interés y pasión hacia los videojuegos :grin:
 
