@@ -1,6 +1,6 @@
 # :video_game: PCNEWS :video_game:
 
-¡Bienvenido! Aquí encontraras el repositorio de mi primer página web para mi proyecto utilizando HTML y CSS puro.
+¡Bienvenido! Aquí encontraras el repositorio de mi primer página web utilizando HTML y CSS puro.
 
 ♦ HTML
 
